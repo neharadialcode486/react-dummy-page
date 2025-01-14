@@ -5,8 +5,14 @@ const Profile = () => {
   return (
     <div>
       <div className="conatiner  flex items-center justify-between px-5 mx-auto max-w-[1240px]  ">
-        <div className="bg-lightGray  w-full rounded-2xl flex gap-5  items-center p-8 ">
-          <div className="max-w-[150px]">Img</div>
+        <div className="bg-lightGray  w-full rounded-2xl flex gap-10  items-start p-8 ">
+          <div className="max-w-[200px]">
+            <img
+              className="w-full rounded-xl h-[200px] object-cover"
+              src="https://imgs.search.brave.com/MmCEbSKTE_HkK6Kyg8lX3y1hfuhTrlNkL06cwGqdItw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTc2/MzkyNjcwMC9waG90/by9wb3J0cmFpdC1v/Zi1zbWlsaW5nLXNt/YXJ0LXNjaG9vbC1i/b3ktd2VhcmluZy1i/cmFjZXMtb24tdGVl/dGgtbG9va2luZy1h/dC1jYW1lcmEtZWR1/Y2F0aW9uLmpwZz9i/PTEmcz0xNzB4MTcw/Jms9MjAmYz1HSXRH/cUpXZktvQXZSN3VH/QnZpU1EtaHVGMjl2/UDdBeHJITmFkWjdr/bFVNPQ"
+              alt="boy"
+            />
+          </div>
           <form action="" className="w-full">
             <div className="flex justify-between items-center">
               <Title
