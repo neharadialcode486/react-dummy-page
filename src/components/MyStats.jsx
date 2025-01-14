@@ -1,19 +1,48 @@
 import React, { useState } from "react";
-import Title from "./common/Title";
-import CustomSelect from "./common/CustomSelect";
-import graph from "../assets/img/graph.svg";
 import GradientAreaChart from "./common/Chart";
+import CustomSelect from "./common/CustomSelect";
+import Title from "./common/Title";
+const generateData = (days, seed) => {
+  const today = new Date();
+  return Array.from({ length: days }, (_, i) => {
+    const date = new Date(today);
+    date.setDate(today.getDate() - (days - 1) + i);
+    const month = date.toLocaleString("default", { month: "short" });
+    const day = date.getDate();
+    const randomOffset = seed ? seed * i : i; // Ensure distinct randomness
+    return {
+      name: `${month} ${day}`,
+      value: Math.floor(Math.random() * 30) + 60 + days - 10 + randomOffset,
+    };
+  });
+};
+
+const dataLast3Months = generateData(90, 1);
+const dataLast3Months2 = generateData(90, 2);
+
+const dataLast2Months = generateData(60, 1);
+const dataLast2Months2 = generateData(60, 2);
+
+const dataLast1Month = generateData(30, 1);
+const dataLast1Month2 = generateData(30, 2);
 
 const MyStats = () => {
-  const data1 = Array.from({ length: 15 }, (_, i) => ({
-    name: `Day ${i + 1}`,
-    value: Math.floor(Math.random() * 30) + 60,
-  }));
+  const [chartData, setChartData] = useState(dataLast3Months);
+  const [chartData2, setChartData2] = useState(dataLast3Months);
 
-  const data2 = Array.from({ length: 15 }, (_, i) => ({
-    name: `Day ${i + 1}`,
-    value: Math.floor(Math.random() * 50) + 40,
-  }));
+  const handleSelectChange = (selectedOption) => {
+    if (selectedOption === "Last 3 Months") {
+      setChartData(dataLast3Months);
+      setChartData2(dataLast3Months2);
+    } else if (selectedOption === "Last 2 Months") {
+      setChartData(dataLast2Months);
+      setChartData2(dataLast2Months2);
+    } else if (selectedOption === "Last 1 Month") {
+      setChartData(dataLast1Month);
+      setChartData2(dataLast1Month2);
+    }
+  };
+
   const [stat, setStat] = useState(1);
   return (
     <div className="conatiner  flex items-center justify-between px-5 mx-auto max-w-[1240px]  ">
@@ -24,7 +53,7 @@ const MyStats = () => {
               title="My Stats"
               desc=" Hello world! Lorem ipsum dolor sit amet consectetur adipisicing elit."
             />
-            <CustomSelect />
+            <CustomSelect onSelectChange={handleSelectChange} />
           </div>
           {stat === 1 ? (
             <div className="bg-white sm:p-7 p-5 rounded-lg w-full my-2 border border-gray flex flex-col sm:flex-row justify-between gap-5">
@@ -38,7 +67,7 @@ const MyStats = () => {
                 />
               </div>
               <div className="w-full">
-                <GradientAreaChart data={data1} color="#ff0000" />
+                <GradientAreaChart data={chartData} color="#ff0000" />
               </div>
             </div>
           ) : (
@@ -53,7 +82,7 @@ const MyStats = () => {
                 />
               </div>
               <div className="w-full">
-                <GradientAreaChart data={data2} color="#0000ff" />{" "}
+                <GradientAreaChart data={chartData2} color="#0000ff" />
               </div>
             </div>
           )}

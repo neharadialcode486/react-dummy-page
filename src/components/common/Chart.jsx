@@ -28,7 +28,8 @@ const GradientAreaChart = ({ data, color }) => {
             dataKey="name"
             axisLine={false}
             tickLine={false}
-            tick={{ fill: "#666" }}
+            tick={{ fill: "#666", fontSize: 12 }}
+            interval={Math.floor(data.length / 6)} // Show fewer ticks for clarity
           />
           <YAxis axisLine={false} tickLine={false} tick={{ fill: "#666" }} />
           <Tooltip />

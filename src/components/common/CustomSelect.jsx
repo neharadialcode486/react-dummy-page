@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-const CustomSelect = () => {
+const CustomSelect = ({ onSelectChange }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState("Select a time period");
+  const [selectedOption, setSelectedOption] = useState("Last 3 Months");
 
   const options = ["Last 3 Months", "Last 2 Months", "Last 1 Month"];
 
@@ -13,16 +13,16 @@ const CustomSelect = () => {
   const handleOptionClick = (option) => {
     setSelectedOption(option);
     setIsOpen(false);
+    onSelectChange(option); // Notify parent of the selected option
   };
 
   return (
     <div className="relative w-56">
-      {/* Selected Option */}
       <button
-        className="w-full bg-white border border-gray text-gray-700 py-2 px-4 rounded-full shadow-sm flex justify-between items-center"
+        className="w-full bg-white border border-gray-300 text-gray-700 py-2 px-4 rounded-full shadow-sm flex justify-between items-center"
         onClick={toggleDropdown}
       >
-        <span className="sm:text-base text-sm">{selectedOption}</span>
+        <span>{selectedOption}</span>
         <svg
           className={`w-4 h-5 transform transition-transform ${
             isOpen ? "rotate-180" : "rotate-0"
@@ -40,14 +40,12 @@ const CustomSelect = () => {
           ></path>
         </svg>
       </button>
-
-      {/* Dropdown Options */}
       {isOpen && (
-        <ul className="absolute z-10 w-full bg-white border border-gray mt-1 rounded shadow-lg">
+        <ul className="absolute z-10 w-full bg-white border border-gray-300 mt-1 rounded shadow-lg">
           {options.map((option) => (
             <li
               key={option}
-              className="px-4 py-2 hover:bg-gray-100 cursor-pointer sm:text-base text-sm"
+              className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
               onClick={() => handleOptionClick(option)}
             >
               {option}
