@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "./common/Title";
 import CustomSelect from "./common/CustomSelect";
+import graph from "../assets/img/graph.svg";
 
 const MyStats = () => {
   return (
@@ -14,19 +15,34 @@ const MyStats = () => {
             />
             <CustomSelect />
           </div>
-          <div className="bg-white p-3 rounded-lg w-full my-2 border border-gray h-[200px]"></div>
+          <div className="bg-white p-7 rounded-lg w-full my-2 border border-gray flex justify-between gap-5">
+            <div className="w-full">
+              <span className="text-base font-normal text-black inline-block pb-8">
+                Views
+              </span>
+              <Title
+                title="500K"
+                desc=" Hello world! Lorem ipsum dolor sit amet consectetur adipisicing elit."
+              />
+            </div>
+            <div className="w-full">
+              <img className="w-full" src={graph} alt="graph" />
+            </div>
+          </div>
           <input
             className="bg-white p-3 rounded-lg w-full my-2 border border-gray"
             type="email"
             placeholder="steve@gmail.com"
             name=""
             id=""
+            value="Clicks"
           />
 
           <input
             className="bg-white p-3 rounded-lg w-full my-2 border border-gray"
-            type="number"
+            type="text"
             placeholder="+1251-676-7246"
+            value="Shares"
           />
         </div>
       </div>

@@ -15,11 +15,11 @@ const Header = () => {
     <div>
       <nav className=" text-black p-4">
         <div className="conatiner  flex items-center justify-between px-5 mx-auto max-w-[1240px]">
-          <div className="text-3xl font-bold">
+          <div className="text-3xl font-bold w-full">
             <a href="/">LOGO</a>
           </div>
 
-          <div className="hidden md:flex space-x-7">
+          <div className="hidden md:flex space-x-7 w-full justify-center">
             <a
               href="#home"
               className="text-base text-gray hover:text-black font-normal"
@@ -40,11 +40,11 @@ const Header = () => {
             </a>
           </div>
 
-          <div className="md:flex gap-3 itesm-center hidden">
-            <button className=" bg-primary text-white px-6 py-3 rounded-full hover:bg-transparent border-primary border hover:text-primary transition-all duration-200 ease-in-out">
+          <div className="md:flex gap-3 itesm-center hidden w-full justify-end">
+            <button className=" bg-primary text-white px-6 py-[10px] rounded-full hover:bg-transparent border-primary border hover:text-primary transition-all duration-200 ease-in-out">
               Log In
             </button>
-            <button className=" bg-lightGray text-black px-6 py-3 rounded-full  border-lightGray border hover:bg-primary hover:text-white transition-all duration-200 ease-in-out">
+            <button className=" bg-lightGray text-black px-6 py-[10px] rounded-full  border-lightGray border hover:bg-primary hover:text-white transition-all duration-200 ease-in-out">
               Sign Up
             </button>
           </div>

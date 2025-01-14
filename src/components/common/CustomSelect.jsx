@@ -16,15 +16,15 @@ const CustomSelect = () => {
   };
 
   return (
-    <div className="relative w-64">
+    <div className="relative w-56">
       {/* Selected Option */}
       <button
-        className="w-full bg-white border border-gray-300 text-gray-700 py-2 px-4 rounded shadow-sm flex justify-between items-center"
+        className="w-full bg-white border border-gray text-gray-700 py-2 px-4 rounded-full shadow-sm flex justify-between items-center"
         onClick={toggleDropdown}
       >
         <span>{selectedOption}</span>
         <svg
-          className={`w-5 h-5 transform transition-transform ${
+          className={`w-4 h-5 transform transition-transform ${
             isOpen ? "rotate-180" : "rotate-0"
           }`}
           fill="none"
@@ -43,7 +43,7 @@ const CustomSelect = () => {
 
       {/* Dropdown Options */}
       {isOpen && (
-        <ul className="absolute z-10 w-full bg-white border border-gray-300 mt-1 rounded shadow-lg">
+        <ul className="absolute z-10 w-full bg-white border border-gray mt-1 rounded shadow-lg">
           {options.map((option) => (
             <li
               key={option}
