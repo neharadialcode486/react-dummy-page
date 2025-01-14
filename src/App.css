@@ -10,3 +10,16 @@ body {
 h2 {
   font-family: "Roboto Condensed", serif;
 }
+.img_1 {
+  transform: perspective(1000px) rotateX(0deg) rotateY(-30deg) skewX(10deg)
+    skewY(-5deg) scaleX(0.9) scaleY(1.05);
+  object-fit: cover;
+}
+.img_2 {
+  transform: skewY(-10deg) rotateY(40deg) rotateX(-3deg);
+  object-fit: cover;
+}
+.img_3 {
+  transform: skewY(5deg) rotateY(40deg) rotateX(30deg) scaleX(1.1) skewX(-10deg);
+  object-fit: cover;
+}

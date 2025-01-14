@@ -1,9 +1,6 @@
 import React from "react";
-import Title from "./common/Title";
 import twitter from "../assets/img/twitter.png";
-import footer1 from "../assets/img/footer-1.png";
-import footer2 from "../assets/img/footer-2.png";
-import footer3 from "../assets/img/footer-3.png";
+import boy from "../assets/img/boy.webp";
 
 const Footer = () => {
   return (
@@ -37,18 +34,19 @@ const Footer = () => {
             INFINITE &nbsp; STYLE
           </h2>
           <img
-            src={footer1}
-            className="absolute sm:left-[10%] left-0 sm:top-0 top-[-7%] w-full lg:max-w-[150px] sm:max-w-[100px] max-w-[60px]"
+            src={boy}
+            className="img_1 absolute sm:left-[10%] left-0 sm:top-0 top-[-7%] w-full lg:max-w-[150px] sm:max-w-[100px] max-w-[60px] rounded-xl  transition-transform duration-300 hover:scale-105"
+            alt="footer 1"
+          />
+
+          <img
+            src={boy}
+            className="img_3 rounded-xl absolute left-[50%] translate-x-[-50%] sm:top-[30%] w-full lg:max-w-[150px] sm:max-w-[100px] max-w-[60px] hidden sm:block"
             alt="footer 1"
           />
           <img
-            src={footer3}
-            className="absolute left-[50%] translate-x-[-50%] sm:top-[30%] w-full lg:max-w-[150px] sm:max-w-[100px] max-w-[60px] hidden sm:block"
-            alt="footer 1"
-          />
-          <img
-            src={footer2}
-            className="absolute xl:right-[12%] sm:right-[10%] right-0 sm:top-[-10%] top-[-5%] w-full lg:max-w-[150px] sm:max-w-[100px] max-w-[60px]"
+            src={boy}
+            className=" img_2 rounded-xl absolute xl:right-[12%] sm:right-[10%] right-0 sm:top-[-10%] top-[-5%] w-full lg:max-w-[150px] sm:max-w-[100px] max-w-[60px]"
             alt="footer 1"
           />
         </div>
