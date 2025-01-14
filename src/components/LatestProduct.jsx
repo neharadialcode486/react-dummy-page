@@ -74,7 +74,7 @@ const LatestProduct = () => {
           <div className="flex flex-col  w-full order-1 lg:order-2">
             <div className="bg-white p-6 rounded-xl">
               <div className="flex gap-4 items-center">
-                <span className="inline-block h-[50px] w-[50px] rounded-full bg-gray"></span>
+                <span className="inline-block sm:h-[50px] h-[35px] sm:w-[50px] w-[35px] rounded-full bg-gray"></span>
                 <p className="text-base font-bold text-balck">
                   Added By Grover
                 </p>
