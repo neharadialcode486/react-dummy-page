@@ -4,7 +4,7 @@ import boy from "../assets/img/boy.webp";
 
 const Footer = () => {
   return (
-    <div className="bg-black text-white pt-10 ">
+    <div className="bg-black text-white pt-10 overflow-hidden">
       <div className="conatiner  px-5 mx-auto max-w-[1240px]">
         <div className="text-2xl font-bold w-full text-center">
           <a href="/">LOGO</a>
