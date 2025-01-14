@@ -6,6 +6,7 @@ import {
   YAxis,
   CartesianGrid,
   ResponsiveContainer,
+  Tooltip,
 } from "recharts";
 
 const GradientAreaChart = ({ data, color }) => {
@@ -30,6 +31,7 @@ const GradientAreaChart = ({ data, color }) => {
             tick={{ fill: "#666" }}
           />
           <YAxis axisLine={false} tickLine={false} tick={{ fill: "#666" }} />
+          <Tooltip />
           <Area
             type="monotone"
             dataKey="value"
