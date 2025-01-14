@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "./common/Title";
 import boy from "../assets/img/boy.webp";
+import Products from "./common/Products";
 
 const LatestProduct = () => {
   return (
@@ -14,7 +15,7 @@ const LatestProduct = () => {
             />
           </div>
         </div>
-
+        <Products />
         <div className="text-center">
           <button className="mt-8 mb-4 bg-primary text-white px-6 md:px-8 py-[10px] rounded-full hover:bg-transparent border-primary border hover:text-primary transition-all duration-200 ease-in-out">
             View More
