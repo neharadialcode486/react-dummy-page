@@ -43,13 +43,13 @@ const Partners = () => {
           title="Our Partners"
           desc=" Hello world! Lorem ipsum dolor sit amet consectetur adipisicing elit."
         />
-        <div className="flex gap-8 xl:justify-between">
+        <div className="flex sm:gap-8 gap-6 flex-wrap xl:flex-norwap xl:justify-between mt-8 xl:mt-0">
           {data.map((obj, i) => (
             <div key={i}>
-              <div className="w-[110px] h-[110px] rounded-full bg-white flex flex-col justify-center items-center mt-8 shadow-md">
+              <div className="xl:w-[110px] sm:w-[90px] w-[70px] xl:h-[110px] sm:h-[90px] h-[70px] rounded-full bg-white flex flex-col justify-center items-center xl:mt-8 shadow-md">
                 <h2>{obj.imgUrl}</h2>
               </div>
-              <p className="text-center text-black text-base font-normal pt-3">
+              <p className="text-center text-black sm:text-base text-sm font-normal sm:pt-3 pt-2">
                 {obj.name}
               </p>
             </div>

@@ -22,7 +22,7 @@ const CustomSelect = () => {
         className="w-full bg-white border border-gray text-gray-700 py-2 px-4 rounded-full shadow-sm flex justify-between items-center"
         onClick={toggleDropdown}
       >
-        <span>{selectedOption}</span>
+        <span className="sm:text-base text-sm">{selectedOption}</span>
         <svg
           className={`w-4 h-5 transform transition-transform ${
             isOpen ? "rotate-180" : "rotate-0"
@@ -47,7 +47,7 @@ const CustomSelect = () => {
           {options.map((option) => (
             <li
               key={option}
-              className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+              className="px-4 py-2 hover:bg-gray-100 cursor-pointer sm:text-base text-sm"
               onClick={() => handleOptionClick(option)}
             >
               {option}
