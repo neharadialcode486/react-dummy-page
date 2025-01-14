@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { CrossIcon } from "./common/Icons";
 
 const Header = () => {
   const [isOverlayOpen, setOverlayOpen] = useState(false);
@@ -12,40 +13,57 @@ const Header = () => {
   };
   return (
     <div>
-      {" "}
       <div>
-        {/* Navigation Bar */}
-        <nav className="bg-red-500 text-white p-4 flex items-center justify-between">
-          {/* Logo */}
-          <div className="text-lg font-bold">LOGO</div>
+        <nav className=" text-black p-4">
+          <div className="conatiner  flex items-center justify-between px-5 mx-auto max-w-[1240px]">
+            <div className="text-3xl font-bold">
+              <a href="/">LOGO</a>
+            </div>
 
-          {/* Links (Hidden on Mobile) */}
-          <div className="hidden md:flex space-x-6">
-            <a href="#" className="hover:underline">
-              Home
-            </a>
-            <a href="#" className="hover:underline">
-              About
-            </a>
-            <a href="#" className="hover:underline">
-              Contact
-            </a>
+            <div className="hidden md:flex space-x-7">
+              <a
+                href="#home"
+                className="text-base text-gray hover:text-black font-normal"
+              >
+                Home
+              </a>
+              <a
+                href="#features"
+                className="text-base text-gray hover:text-black font-normal"
+              >
+                Features
+              </a>
+              <a
+                href="#community"
+                className="text-base text-gray hover:text-black font-normal"
+              >
+                Community
+              </a>
+            </div>
+
+            <div className="md:flex gap-3 itesm-center hidden">
+              <button className=" bg-primary text-white px-6 py-3 rounded-full hover:bg-transparent border-primary border hover:text-primary transition-all duration-200 ease-in-out">
+                Log In
+              </button>
+              <button className=" bg-lightGray text-black px-6 py-3 rounded-full  border-lightGray border hover:bg-primary hover:text-white transition-all duration-200 ease-in-out">
+                Sign Up
+              </button>
+            </div>
+
+            <button className="md:hidden text-2xl" onClick={toggleOverlay}>
+              ☰
+            </button>
           </div>
-
-          {/* Button (Hidden on Mobile) */}
-          <button className="hidden md:block bg-white text-red-500 px-4 py-2 rounded hover:bg-red-100">
-            Sign Up
-          </button>
-
-          {/* Toggle Button (Visible on Mobile) */}
-          <button className="md:hidden text-2xl" onClick={toggleOverlay}>
-            ☰
-          </button>
         </nav>
 
-        {/* Overlay Navigation */}
         {isOverlayOpen && (
-          <div className="fixed inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center text-white z-50">
+          <div className="fixed inset-0 bg-black  flex flex-col items-center justify-center text-white z-50">
+            <span
+              className="absolute top-[3%] right-[6%] text-white cursor-pointer"
+              onClick={closeOverlay}
+            >
+              <CrossIcon />
+            </span>
             <a
               href="#"
               className="text-2xl my-2 hover:underline"
@@ -67,6 +85,15 @@ const Header = () => {
             >
               Contact
             </a>
+
+            <div className="flex gap-3 itesm-center mt-8">
+              <button className=" bg-primary text-white px-6 py-3 rounded-full hover:bg-transparent border-primary border hover:text-primary transition-all duration-200 ease-in-out">
+                Log In
+              </button>
+              <button className=" bg-lightGray text-black px-6 py-3 rounded-full  border-lightGray border hover:bg-primary hover:text-white transition-all duration-200 ease-in-out">
+                Sign Up
+              </button>
+            </div>
           </div>
         )}
       </div>
