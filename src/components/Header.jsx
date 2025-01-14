@@ -13,9 +13,9 @@ const Header = () => {
   };
   return (
     <div>
-      <nav className=" text-black p-4">
+      <nav className=" text-black lg:p-4 sm:px-4 py-5">
         <div className="conatiner  flex items-center justify-between px-5 mx-auto max-w-[1240px]">
-          <div className="text-3xl font-bold w-full">
+          <div className="text-3xl font-bold lg:w-full">
             <a href="/">LOGO</a>
           </div>
 
@@ -40,11 +40,11 @@ const Header = () => {
             </a>
           </div>
 
-          <div className="md:flex gap-3 itesm-center hidden w-full justify-end">
-            <button className=" bg-primary text-white px-6 py-[10px] rounded-full hover:bg-transparent border-primary border hover:text-primary transition-all duration-200 ease-in-out">
+          <div className="md:flex gap-3 itesm-center hidden lg:w-full justify-end">
+            <button className=" bg-primary text-nowrap text-white lg:px-6 px-4 lg:py-[10px] py-2 rounded-full hover:bg-transparent border-primary border hover:text-primary transition-all duration-200 ease-in-out">
               Log In
             </button>
-            <button className=" bg-lightGray text-black px-6 py-[10px] rounded-full  border-lightGray border hover:bg-primary hover:text-white transition-all duration-200 ease-in-out">
+            <button className=" bg-lightGray text-nowrap text-black lg:px-6 px-4 lg:py-[10px] py-2 rounded-full  border-lightGray border hover:bg-primary hover:text-white transition-all duration-200 ease-in-out">
               Sign Up
             </button>
           </div>
