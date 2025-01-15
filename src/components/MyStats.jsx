@@ -59,12 +59,14 @@ const MyStats = () => {
             desc="Hello world! Lorem ipsum dolor sit amet consectetur."
             color="#ff0000"
             chart={chartData}
+            open={true}
           />
           <ChartAccordion
             title="Shares"
             desc="Another description for accordion 2."
             color="#ff0000"
             chart={chartData2}
+            open={false}
           />
         </div>
       </div>

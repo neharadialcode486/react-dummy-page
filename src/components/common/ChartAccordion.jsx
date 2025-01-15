@@ -3,8 +3,8 @@ import AnimateHeight from "react-animate-height";
 import GradientAreaChart from "./Chart";
 import Title from "./Title";
 
-const ChartAccordion = ({ chart, title, color, desc }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const ChartAccordion = ({ chart, title, color, desc, open }) => {
+  const [isOpen, setIsOpen] = useState(open);
 
   const toggleAccordion = () => {
     setIsOpen(!isOpen);
