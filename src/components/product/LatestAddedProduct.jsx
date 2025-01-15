@@ -4,42 +4,9 @@ import Title from "../common/Title";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import CommonImg from "../common/CommonImg";
 import MiddleImgs from "../common/MiddleImgs";
+import ParnersLogos from "../common/ParnersLogos";
 
 const LatestAddedProduct = () => {
-  const data = [
-    {
-      imgUrl: "LOGO",
-      name: "Idhaho-o",
-    },
-    {
-      imgUrl: "LOGO",
-      name: "Idhaho-o",
-    },
-    {
-      imgUrl: "LOGO",
-      name: "Idhaho-o",
-    },
-    {
-      imgUrl: "LOGO",
-      name: "Idhaho-o",
-    },
-    {
-      imgUrl: "LOGO",
-      name: "Idhaho-o",
-    },
-    {
-      imgUrl: "LOGO",
-      name: "Idhaho-o",
-    },
-    {
-      imgUrl: "LOGO",
-      name: "Idhaho-o",
-    },
-    {
-      imgUrl: "LOGO",
-      name: "Idhaho-o",
-    },
-  ];
     const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 640);
   
     useEffect(() => {
@@ -58,18 +25,7 @@ const LatestAddedProduct = () => {
           title="Latest Added Product & Collections"
           desc="Paste a product link from your favorite online stores to start uploading."
         />
-        <div className="flex lg:gap-10 sm:gap-8 gap-6 mt-7 overflow-auto scrollbar_hidden">
-          {data.map((obj, i) => (
-            <div key={i}>
-              <div className="xl:w-[110px] sm:w-[90px] w-[70px] xl:h-[110px] sm:h-[90px] h-[70px] rounded-full bg-white flex flex-col justify-center items-center shadow-md">
-                <h2>{obj.imgUrl}</h2>
-              </div>
-              <p className="text-center text-black sm:text-base text-sm font-normal sm:pt-3 pt-2">
-                {obj.name}
-              </p>
-            </div>
-          ))}
-        </div>
+          <ParnersLogos />
         <div className="mt-7">
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 2, 750: 3, 1200: 4 }}

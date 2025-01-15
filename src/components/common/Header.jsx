@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { CrossIcon } from "./common/Icons";
+import { CrossIcon } from "./Icons";
+import logo from "../../assets/img/logo.png";
 
 const Header = () => {
   const [isOverlayOpen, setOverlayOpen] = useState(false);
@@ -16,7 +17,9 @@ const Header = () => {
       <nav className=" text-black lg:p-4 sm:px-4 py-5">
         <div className="conatiner  flex items-center justify-between px-5 mx-auto max-w-[1240px]">
           <div className="text-3xl font-bold lg:w-full">
-            <a href="/">LOGO</a>
+            <a href="/">
+              <img className="max-w-[107px] w-full" src={logo} alt="logo" />
+            </a>
           </div>
 
           <div className="hidden md:flex space-x-7 w-full justify-center">

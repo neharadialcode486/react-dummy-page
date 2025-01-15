@@ -36,7 +36,7 @@ const Profile = () => {
             Name
           </label>
           <input
-            className="bg-white p-3 rounded-lg w-full"
+            className="bg-white p-3 rounded-lg w-full text-sm"
             type="text"
             placeholder="Steve"
           />
@@ -47,7 +47,7 @@ const Profile = () => {
             Email Address
           </label>
           <input
-            className="bg-white p-3 rounded-lg w-full"
+            className="bg-white p-3 rounded-lg w-full text-sm"
             type="email"
             placeholder="steve@gmail.com"
             name=""
@@ -60,7 +60,7 @@ const Profile = () => {
             Phone Number (Optional)
           </label>
           <input
-            className="bg-white p-3 rounded-lg w-full"
+            className="bg-white p-3 rounded-lg w-full text-sm"
             type="number"
             placeholder="+1251-676-7246"
           />

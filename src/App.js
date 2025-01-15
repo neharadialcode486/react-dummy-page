@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Footer from "./components/common/Footer";
+import Header from "./components/common/Header";
 import LatestProduct from "./components/LatestProduct";
 import MyStats from "./components/MyStats";
 import Partners from "./components/Partners";
@@ -13,11 +13,11 @@ function App() {
   return (
     <>
       <Header />
-      {/* <ShareExperience />
+      <ShareExperience />
       <Profile />
       <Partners />
       <MyStats />
-      <LatestProduct /> */}
+      <LatestProduct />
       <Routes>
         <Route path="/post" element={<Post/>} />
       </Routes>
