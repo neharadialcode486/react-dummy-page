@@ -58,12 +58,12 @@ const MyStats = () => {
     }
   };
 
-  const [stat, setStat] = useState(1);
   const [openAccordion, setOpenAccordion] = useState(0); // Track the currently open accordion
 
   const toggleAccordion = (id) => {
     setOpenAccordion(openAccordion === id ? null : id);
   };
+
   return (
     <div className="conatiner  flex items-center justify-between px-5 mx-auto max-w-[1240px]  ">
       <div className="bg-lightGray  w-full rounded-2xl flex gap-10  items-start sm:p-8 p-5 ">

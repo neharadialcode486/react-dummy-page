@@ -19,7 +19,7 @@ const CustomSelect = ({ onSelectChange }) => {
   return (
     <div className="relative w-56">
       <button
-        className="w-full bg-white border border-gray-300 text-gray-700 py-2 px-4 rounded-full shadow-sm flex justify-between items-center"
+        className="w-full bg-white border border-gray text-black py-2 px-4 rounded-full shadow-sm flex justify-between items-center"
         onClick={toggleDropdown}
       >
         <span>{selectedOption}</span>

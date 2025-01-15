@@ -1,14 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: cook;
+  src: url("./assets/font/cookconthic.otf");
+}
 body {
-  font-family: "Inter Tight", serif;
+  font-family: "Plus Jakarta Sans", serif;
 }
 h2 {
-  font-family: "Roboto Condensed", serif;
+  font-family: cook;
 }
 .img_1 {
   transform: perspective(1000px) rotateX(0deg) rotateY(-30deg) skewX(10deg)

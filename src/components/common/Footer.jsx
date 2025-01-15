@@ -1,30 +1,33 @@
 import React from "react";
-import twitter from "../assets/img/twitter.png";
-import boy from "../assets/img/boy.webp";
+import boy from "../../assets/img/boy.webp";
+import { Copyright, Facebook, Insta, Twitter } from "./Icons";
+import logo from "../../assets/img/white-logo.png";
 
 const Footer = () => {
   return (
     <div className="bg-black text-white pt-10 overflow-hidden">
       <div className="conatiner  px-5 mx-auto max-w-[1240px]">
-        <div className="text-2xl font-bold w-full text-center">
-          <a href="/">LOGO</a>
+        <div className="text-2xl font-bold w-full text-center flex flex-col justify-center items-center">
+          <a href="/">
+            <img className="w-full max-w-[80px]" src={logo} alt="logo" />
+          </a>
         </div>
         <div className="w-full flex gap-5 justify-center mt-3 mb-3 sm:mb-0">
           <a
             href="#home"
-            className="sm:text-base text-sm text-gray hover:text-black font-normal"
+            className="sm:text-base text-sm text-gray hover:text-primary font-normal"
           >
             Home
           </a>
           <a
             href="#features"
-            className="sm:text-base text-sm text-gray hover:text-black font-normal"
+            className="sm:text-base text-sm text-gray hover:text-primary font-normal"
           >
             Features
           </a>
           <a
             href="#community"
-            className="sm:text-base text-sm text-gray hover:text-black font-normal"
+            className="sm:text-base text-sm text-gray hover:text-primary font-normal"
           >
             Community
           </a>
@@ -50,40 +53,32 @@ const Footer = () => {
             alt="footer 1"
           />
         </div>
-        <div className="flex justify-between items-center lg:pt-5 pt-10 pb-4">
-          <div className="flex gap-2">
+        <div className="flex justify-between items-center lg:pt-5 pt-10 pb-8">
+          <div className="flex gap-5">
             <a
               className="hover:scale-110 transition-all duration-200 ease-in-out inline-block"
               href="#"
             >
-              <img
-                className="lg:w-[40px] w-[30px]"
-                src={twitter}
-                alt="twitter"
-              />
+              <Twitter />
             </a>
             <a
               className="hover:scale-110 transition-all duration-200 ease-in-out inline-block"
               href="#"
             >
-              <img
-                className="lg:w-[40px] w-[30px]"
-                src={twitter}
-                alt="twitter"
-              />
+              <Insta />
             </a>
             <a
               className="hover:scale-110 transition-all duration-200 ease-in-out inline-block"
               href="#"
             >
-              <img
-                className="lg:w-[40px] w-[30px]"
-                src={twitter}
-                alt="twitter"
-              />
+              <Facebook />
             </a>
           </div>
-          <p className="text-sm font-normal">{new Date().getFullYear()}</p>
+          <p className="text-sm font-normal flex">
+            <Copyright />
+            adhoc
+            {new Date().getFullYear()}
+          </p>
         </div>
       </div>
     </div>
