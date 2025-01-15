@@ -14,7 +14,7 @@ h2 {
   font-family: cook;
 }
 .img_1 {
-  transform: perspective(1000px) rotateX(0deg) rotateY(-30deg) skewX(10deg)
+  transform: perspective(1000px) rotateX(0deg) rotateY(-20deg) skewX(0deg)
     skewY(-5deg) scaleX(0.9) scaleY(1.05);
   object-fit: cover;
 }

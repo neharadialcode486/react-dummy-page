@@ -33,18 +33,18 @@ const Footer = () => {
           </a>
         </div>
         <div className="relative">
-          <h2 className="text-white lg:text-[120px] text-[50px] font-bold text-center text-nowrap tracking-tight sm:mb-[10%]">
-            INFINITE &nbsp; STYLE
+          <h2 className="text-white lg:text-[250px] text-[83px] font-bold text-center text-nowrap tracking-tight">
+            INFINITE&nbsp;STYLE
           </h2>
           <img
             src={boy}
-            className="img_1 absolute sm:left-[10%] left-0 sm:top-0 top-[-7%] w-full lg:max-w-[150px] sm:max-w-[100px] max-w-[60px] rounded-xl  transition-transform duration-300 hover:scale-105"
+            className="img_1 absolute sm:left-[7%] left-0 sm:top-[50px] top-[-5%] lg:min-w-[177px] lg:h-[305px] sm:min-w-[100px] max-w-[60px] rounded-xl  transition-transform duration-300 hover:scale-105"
             alt="footer 1"
           />
 
           <img
             src={boy}
-            className="img_3 rounded-xl absolute left-[50%] translate-x-[-50%] sm:top-[30%] w-full lg:max-w-[150px] sm:max-w-[100px] max-w-[60px] hidden sm:block"
+            className="img_3 rounded-xl absolute left-[50%] translate-x-[-50%] sm:top-[30%] w-full lg:max-w-[150px] sm:max-w-[100px] max-w-[60px]"
             alt="footer 1"
           />
           <img
@@ -53,7 +53,7 @@ const Footer = () => {
             alt="footer 1"
           />
         </div>
-        <div className="flex justify-between items-center lg:pt-5 pt-10 pb-8">
+        <div className="flex justify-between items-center  sm:mt-[133px] mt-[111px] pb-8">
           <div className="flex gap-5">
             <a
               className="hover:scale-110 transition-all duration-200 ease-in-out inline-block"
