@@ -1,0 +1,36 @@
+import React from "react";
+import Title from "../common/Title";
+
+const AddProduct = () => {
+  return (
+    <div className="conatiner px-5 mx-auto max-w-[1240px] md:mb-12 mb-8">
+      <div className="bg-lightGray rounded-[20px] px-5 py-[30px]">
+        <div className="flex justify-between md:gap-10 gap-6 items-start mb-10">
+          <Title
+            title="Add Your Product"
+            desc="Paste a product link from your favorite online stores to start uploading."
+          />
+          <a href="#" className="font-normal md:text-sm text-xs text-black !leading-[160%] text-nowrap">How it works?</a>
+        </div>
+        <div>
+        <label
+            className="block pb-3 text-black text-base font-normal !leading-[125%]"
+            htmlFor=""
+          >
+            Product Link
+          </label>
+          <input
+            className="bg-white p-3.5 rounded-lg w-full placeholder:text-sm"
+            type="text"
+            placeholder="Paste the product link here to start uploading. "
+          />
+             <button className="mt-7 bg-black text-white px-6 md:px-8 sm:py-[10px] py-2 rounded-full hover:bg-transparent border-black border hover:text-black transition-all duration-200 ease-in-out">
+             Fetch Product
+            </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AddProduct;
