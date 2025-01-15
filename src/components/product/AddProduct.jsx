@@ -3,7 +3,7 @@ import Title from "../common/Title";
 
 const AddProduct = () => {
   return (
-    <div className="conatiner px-5 mx-auto max-w-[1240px] md:mb-12 mb-8">
+    <div className="conatiner px-5 mx-auto max-w-[1240px] md:mb-12 mb-8 lg:mt-[60px] md:mt-8 mt-4">
       <div className="bg-lightGray rounded-[20px] px-5 py-[30px]">
         <div className="flex justify-between md:gap-10 gap-6 items-start mb-10">
           <Title
@@ -24,7 +24,7 @@ const AddProduct = () => {
             type="text"
             placeholder="Paste the product link here to start uploading. "
           />
-             <button className="mt-7 bg-black text-white px-6 md:px-8 sm:py-[10px] py-2 rounded-full hover:bg-transparent border-black border hover:text-black transition-all duration-200 ease-in-out">
+             <button className="mt-7 bg-black text-white px-6 md:px-8 sm:py-[10px] py-2 rounded-full hover:bg-transparent border-black border hover:text-black transition-all duration-200 ease-in-out font-semibold">
              Fetch Product
             </button>
         </div>

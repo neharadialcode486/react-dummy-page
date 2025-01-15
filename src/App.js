@@ -2,24 +2,20 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/common/Footer";
 import Header from "./components/common/Header";
-import LatestProduct from "./components/LatestProduct";
-import MyStats from "./components/MyStats";
-import Partners from "./components/Partners";
-import Profile from "./components/Profile";
-import ShareExperience from "./components/ShareExperience";
 import Post from "./pages/Post";
+import UserProfile from "./pages/UserProfile";
+import PostProduct from "./pages/PostProduct";
+import PostProductDetails from "./pages/PostProductDetails";
 
 function App() {
   return (
     <>
       <Header />
-      <ShareExperience />
-      <Profile />
-      <Partners />
-      <MyStats />
-      <LatestProduct />
       <Routes>
+        <Route path="/" element={<UserProfile/>} />
         <Route path="/post" element={<Post/>} />
+        <Route path="/post-product" element={<PostProduct/>} />
+        <Route path="/post-product-details" element={<PostProductDetails/>} />
       </Routes>
       <Footer />
     </>
