@@ -54,7 +54,7 @@ const FashionDropdown = () => {
       </div>
       {/* ======== DROPDOWN ====== */}
       {isOpen && (
-        <div className="absolute right-0 z-10 sm:w-[300px] w-[236px] h-[407px] mt-2 bg-white border border-black border-opacity-10 rounded-[20px] shadow-[0px_14px_8.9px_#0000001A] overflow-hidden py-4">
+        <div className="absolute right-0 z-20 sm:w-[300px] w-[236px] h-[407px] mt-2 bg-white border border-black border-opacity-10 rounded-[20px] shadow-[0px_14px_8.9px_#0000001A] overflow-hidden py-4">
           <div className="px-4">
             <div className="w-full p-2 border border-black border-opacity-35 rounded-full flex gap-1.5 items-center h-8">
               <Search />
