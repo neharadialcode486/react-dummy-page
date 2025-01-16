@@ -7,9 +7,9 @@ const AboutProduct = () => {
     <div className="max-w-[577px] w-full mt-8">
       <div className="flex items-center gap-6 mb-6">
         <img
-          src={boy}
+          src="https://imgs.search.brave.com/MmCEbSKTE_HkK6Kyg8lX3y1hfuhTrlNkL06cwGqdItw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTc2/MzkyNjcwMC9waG90/by9wb3J0cmFpdC1v/Zi1zbWlsaW5nLXNt/YXJ0LXNjaG9vbC1i/b3ktd2VhcmluZy1i/cmFjZXMtb24tdGVl/dGgtbG9va2luZy1h/dC1jYW1lcmEtZWR1/Y2F0aW9uLmpwZz9i/PTEmcz0xNzB4MTcw/Jms9MjAmYz1HSXRH/cUpXZktvQXZSN3VH/QnZpU1EtaHVGMjl2/UDdBeHJITmFkWjdr/bFVNPQ"
           alt="user"
-          className="md:size-[60px] size-[50px] rounded-full"
+          className="md:size-[60px] size-[50px] rounded-full object-cover"
         />
         <p className="text-light-black font-medium md:text-xl text-lg">
           Greg L. Grover
@@ -72,9 +72,9 @@ const AboutProduct = () => {
         </div>
         <div className="mb-5 flex items-start gap-5">
           <img
-            src={boy}
+            src="https://imgs.search.brave.com/MmCEbSKTE_HkK6Kyg8lX3y1hfuhTrlNkL06cwGqdItw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTc2/MzkyNjcwMC9waG90/by9wb3J0cmFpdC1v/Zi1zbWlsaW5nLXNt/YXJ0LXNjaG9vbC1i/b3ktd2VhcmluZy1i/cmFjZXMtb24tdGVl/dGgtbG9va2luZy1h/dC1jYW1lcmEtZWR1/Y2F0aW9uLmpwZz9i/PTEmcz0xNzB4MTcw/Jms9MjAmYz1HSXRH/cUpXZktvQXZSN3VH/QnZpU1EtaHVGMjl2/UDdBeHJITmFkWjdr/bFVNPQ"
             alt="user"
-            className="md:size-[60px] md:min-w-[60px] min-w-[50px] size-[50px] rounded-full"
+            className="md:size-[60px] md:min-w-[60px] min-w-[50px] size-[50px] rounded-full object-cover"
           />
           <div>
             <div className="flex items-center gap-6 mb-3 justify-between">
@@ -94,9 +94,9 @@ const AboutProduct = () => {
         </div>
         <div className="flex items-start gap-5">
           <img
-            src={boy}
+            src="https://imgs.search.brave.com/MmCEbSKTE_HkK6Kyg8lX3y1hfuhTrlNkL06cwGqdItw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTc2/MzkyNjcwMC9waG90/by9wb3J0cmFpdC1v/Zi1zbWlsaW5nLXNt/YXJ0LXNjaG9vbC1i/b3ktd2VhcmluZy1i/cmFjZXMtb24tdGVl/dGgtbG9va2luZy1h/dC1jYW1lcmEtZWR1/Y2F0aW9uLmpwZz9i/PTEmcz0xNzB4MTcw/Jms9MjAmYz1HSXRH/cUpXZktvQXZSN3VH/QnZpU1EtaHVGMjl2/UDdBeHJITmFkWjdr/bFVNPQ"
             alt="user"
-            className="md:size-[60px] md:min-w-[60px] min-w-[50px] size-[50px] rounded-full"
+            className="md:size-[60px] md:min-w-[60px] min-w-[50px] size-[50px] rounded-full object-cover"
           />
           <div>
             <div className="flex items-center gap-6 mb-3 justify-between">
@@ -114,6 +114,9 @@ const AboutProduct = () => {
             </p>
           </div>
         </div>
+        <button className="bg-lightGray text-center p-2.5 mt-5 border border-transparent rounded-full w-full font-medium text-base text-black">
+        View more
+        </button>
       </div>
     </div>
   );

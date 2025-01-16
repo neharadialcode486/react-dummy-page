@@ -11,6 +11,10 @@ import footwear from "../../assets/img/footwear.png"
 import jackets from "../../assets/img/jackets.png"
 import trousers from "../../assets/img/trousers.png"
 import shirts from "../../assets/img/shirts.png"
+import product1 from "../../assets/img/product-1.png";
+import product2 from "../../assets/img/product-2.png";
+import product3 from "../../assets/img/product-3.png";
+import product4 from "../../assets/img/product-4.png";
 export const partnerData = [
   {
     imgUrl: partner1,
@@ -52,6 +56,8 @@ export const boards = [
   { name: "Jackets", icon: jackets, locked: true },
   { name: "Trousers", icon: trousers, locked: true },
   { name: "Shirts", icon: shirts, locked: true, shared: true },
+  { name: "Men", icon: men, locked: true },
+  { name: "Footwear", icon: footwear, locked: true },
 ];
 export   const colors = [
   { name: "Teal", colorCode: "bg-[#759E9C]" },
@@ -65,3 +71,10 @@ export const sizes = ["L", "M", "S", "XL", "XXL"];
  export const budgetOptions = ["Affordable", "Moderate", "Expensive"];
  export const categoryOptions = ["Men", "Women", "Kids"];
  export const userOption = ["Men", "Women", "Kids"];
+
+ export const productImages = [
+  { id: 1, src: product1 },
+  { id: 2, src: product2 },
+  { id: 3, src: product3 },
+  { id: 4, src: product4 },
+ ]

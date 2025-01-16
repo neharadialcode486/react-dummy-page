@@ -3,10 +3,8 @@ import "./App.css";
 import Footer from "./components/common/Footer";
 import Header from "./components/common/Header";
 import Post from "./pages/Post";
-import PostProduct from "./pages/PostProduct";
-import PostProductDetails from "./pages/PostProductDetails";
-import UserProfile from "./pages/UserProfile";
 import ProductDetails from "./pages/ProductDetails";
+import UserProfile from "./pages/UserProfile";
 
 function App() {
   return (
@@ -15,8 +13,6 @@ function App() {
       <Routes>
         <Route path="/" element={<UserProfile/>} />
         <Route path="/post" element={<Post/>} />
-        <Route path="/post-product" element={<PostProduct/>} />
-        <Route path="/post-product-details" element={<PostProductDetails/>} />
         <Route path="/product-details" element={<ProductDetails/>} />
       </Routes>
       <Footer />

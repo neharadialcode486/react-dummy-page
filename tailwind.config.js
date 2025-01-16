@@ -10,6 +10,10 @@ module.exports = {
         red:"#FF0000",
         "light-black":"#1E1E1E",
       },
+      backgroundImage: {
+        'gray-gradient': 'linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%)',
+        'gradient-horizontal': 'linear-gradient(90deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%)'
+      },
     },
   },
   plugins: [],
