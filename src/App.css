@@ -19,10 +19,10 @@ h2 {
   object-fit: cover;
 }
 .img_2 {
-  transform: skewY(-10deg) rotateY(40deg) rotateX(-3deg);
+  transform: skewY(5deg) rotateY(-20deg) rotateX(0deg) scaleX(0.9) skewX(0deg);
   object-fit: cover;
 }
 .img_3 {
-  transform: skewY(5deg) rotateY(40deg) rotateX(30deg) scaleX(1.1) skewX(-10deg);
+  transform: skewY(5deg) rotateY(-20deg) rotateX(0deg) scaleX(0.9) skewX(0deg);
   object-fit: cover;
 }

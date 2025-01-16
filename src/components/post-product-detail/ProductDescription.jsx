@@ -1,26 +1,13 @@
 import React, { useState } from "react";
 import CommonSelect from "./CommonSelect";
+import { budgetOptions, categoryOptions, colors, sizes, userOption } from "../common/Helper";
 
 const ProductDescription = () => {
-  const budgetOptions = ["Affordable", "Moderate", "Expensive"];
-  const categoryOptions = ["Men", "Women", "Kids"];
-  const userOption = ["Men", "Women", "Kids"];
   const [selectedColor, setSelectedColor] = useState(null);
   const [selectedSize, setSelectedSize] = useState(null);
   const [selectedBudget, setSelectedBudget] = useState(budgetOptions[0]);
   const [selectedCategory, setSelectedCategory] = useState(categoryOptions[0]);
   const [selectedUser, setSelectedUser] = useState(userOption[0]);
-
-  const colors = [
-    { name: "Teal", colorCode: "bg-[#759E9C]" },
-    { name: "Orange", colorCode: "bg-[#FB876DCC]" },
-    { name: "Yellow", colorCode: "bg-[#F7C22ACC]" },
-    { name: "Purple", colorCode: "bg-[#8661F0CC]" },
-    { name: "Pink", colorCode: "bg-[#F06172CC]" },
-  ];
-
-  const sizes = ["L", "M", "S", "XL", "XXL"];
-
   return (
     <div className="flex items-center justify-center mt-6">
       <div className="w-full flex flex-col gap-[22px]">

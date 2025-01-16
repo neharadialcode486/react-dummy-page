@@ -1,7 +1,9 @@
 import React from "react";
-import boy from "../../assets/img/boy.webp";
 import { Copyright, Facebook, Insta, Twitter } from "./Icons";
 import logo from "../../assets/img/white-logo.png";
+import footer1 from "../../assets/img/footer-1.png"
+import footer2 from "../../assets/img/footer-2.png"
+import footer3 from "../../assets/img/footer-3.png"
 
 const Footer = () => {
   return (
@@ -12,7 +14,7 @@ const Footer = () => {
             <img className="w-full max-w-[80px]" src={logo} alt="logo" />
           </a>
         </div>
-        <div className="w-full flex gap-5 justify-center mt-3 mb-3 sm:mb-0">
+        <div className="w-full flex gap-5 justify-center mt-3 mb-16 sm:mb-0">
           <a
             href="#home"
             className="sm:text-base text-sm text-gray hover:text-primary font-normal"
@@ -33,23 +35,23 @@ const Footer = () => {
           </a>
         </div>
         <div className="relative">
-          <h2 className="text-white lg:text-[250px] text-[83px] font-bold text-center text-nowrap tracking-tight">
+          <h2 className="text-white lg:text-[250px] md:text-[160px] sm:text-[120px] text-[83px] !leading-[100%] font-bold text-center text-nowrap tracking-tight">
             INFINITE&nbsp;STYLE
           </h2>
           <img
-            src={boy}
-            className="img_1 absolute sm:left-[7%] left-0 sm:top-[50px] top-[-5%] lg:min-w-[177px] lg:h-[305px] sm:min-w-[100px] max-w-[60px] rounded-xl  transition-transform duration-300 hover:scale-105"
+            src={footer1}
+            className="img_1 absolute sm:left-[7%] left-0 sm:top-[-2%] top-[-5%] lg:min-w-[177px] lg:max-w-[187px] lg:h-[305px] md:min-w-[140px] md:max-w-[150px] md:h-[200px] sm:min-w-[100px] sm:h-[150px] min-w-[60px] max-w-[70px] h-[111px] rounded-xl  transition-transform duration-300 hover:scale-105"
             alt="footer 1"
           />
 
           <img
-            src={boy}
-            className="img_3 rounded-xl absolute left-[50%] translate-x-[-50%] sm:top-[30%] w-full lg:max-w-[150px] sm:max-w-[100px] max-w-[60px]"
+            src={footer2}
+            className="img_3 rounded-xl absolute left-[44%] translate-x-[-50%] sm:top-[26%] top-[28%] lg:min-w-[177px] lg:max-w-[187px] lg:h-[305px] md:min-w-[140px] md:max-w-[150px] md:h-[200px] sm:min-w-[100px] sm:h-[150px] min-w-[60px] max-w-[70px] h-[111px]"
             alt="footer 1"
           />
           <img
-            src={boy}
-            className=" img_2 rounded-xl absolute xl:right-[12%] sm:right-[10%] right-0 sm:top-[-10%] top-[-5%] w-full lg:max-w-[150px] sm:max-w-[100px] max-w-[60px]"
+            src={footer3}
+            className=" img_2 rounded-xl absolute xl:right-[5%] sm:right-[10%] right-[-1%] sm:top-[-20%] top-[-30%] lg:min-w-[177px] lg:max-w-[187px] lg:h-[305px] md:min-w-[140px] md:max-w-[150px] md:h-[200px] sm:min-w-[100px] sm:h-[150px] min-w-[60px] max-w-[70px] h-[111px]"
             alt="footer 1"
           />
         </div>

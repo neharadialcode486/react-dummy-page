@@ -3,9 +3,9 @@ import "./App.css";
 import Footer from "./components/common/Footer";
 import Header from "./components/common/Header";
 import Post from "./pages/Post";
-import UserProfile from "./pages/UserProfile";
 import PostProduct from "./pages/PostProduct";
 import PostProductDetails from "./pages/PostProductDetails";
+import UserProfile from "./pages/UserProfile";
 
 function App() {
   return (

@@ -21,17 +21,17 @@ const Products = () => {
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 3, 1200: 4 }}>
         <Masonry>
           {isWideScreen && (
-            <CommonImg imgClass="lg:h-[250px] sm:h-[150px] h-[200px] w-full object-cover rounded-xl" />
+            <CommonImg imgClass="lg:h-[250px] sm:h-[150px] h-[200px] w-full object-cover rounded-xl" image={boy} />
           )}
           <MiddleImgs />
           <span className="inline-block lg:h-[747px] sm:h-[560px] h-[500px] "></span>
-          <CommonImg imgClass="lg:h-[400px] sm:h-[300px] h-[100px] w-full object-cover rounded-xl" />
-          <CommonImg imgClass="lg:h-[450px] sm:h-[350px] h-[250px] w-full object-cover rounded-xl" />
-          <CommonImg imgClass="lg:h-[550px] sm:h-[450px] h-[300px] w-full object-cover rounded-xl" />
-          <CommonImg imgClass="lg:h-[500px] sm:h-[400px] h-[250px] w-full object-cover rounded-xl" />
-          <CommonImg imgClass="lg:h-[480px] sm:h-[380px] h-[180px] w-full object-cover rounded-xl" />
-          <CommonImg imgClass="lg:h-[500px] sm:h-[250px] h-[200px] w-full object-cover rounded-xl" />
-          <CommonImg imgClass="lg:h-[270px] sm:h-[170px] h-[100px] w-full object-cover rounded-xl" />
+          <CommonImg imgClass="lg:h-[400px] sm:h-[300px] h-[100px] w-full object-cover rounded-xl" image={boy} />
+          <CommonImg imgClass="lg:h-[450px] sm:h-[350px] h-[250px] w-full object-cover rounded-xl" image={boy} />
+          <CommonImg imgClass="lg:h-[550px] sm:h-[450px] h-[300px] w-full object-cover rounded-xl" image={boy} />
+          <CommonImg imgClass="lg:h-[500px] sm:h-[400px] h-[250px] w-full object-cover rounded-xl" image={boy} />
+          <CommonImg imgClass="lg:h-[480px] sm:h-[380px] h-[180px] w-full object-cover rounded-xl" image={boy} />
+          <CommonImg imgClass="lg:h-[500px] sm:h-[250px] h-[200px] w-full object-cover rounded-xl" image={boy} />
+          <CommonImg imgClass="lg:h-[270px] sm:h-[170px] h-[100px] w-full object-cover rounded-xl" image={boy} />
         </Masonry>
       </ResponsiveMasonry>
     </div>

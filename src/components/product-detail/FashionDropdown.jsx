@@ -1,10 +1,39 @@
 import React, { useEffect, useRef, useState } from "react";
-import boy from "../../assets/img/boy.webp";
+import { boards } from "../common/Helper";
 import { Lock, Plus, Search, SelectArrow, Share } from "../common/Icons";
+import ErrorPopUp from "../product/ErrorPopUp";
 
 const FashionDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
+   // ==== ERROR POPUP ========
+   const [isPopUpVisible, setIsPopUpVisible] = useState(false);
+  const popUpRef = useRef(null);
+
+  const handleShowPopUp = () => {
+    setIsPopUpVisible(true);
+    document.body.style.overflow = "hidden";
+  };
+
+  // Close popup if clicked outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (popUpRef.current && !popUpRef.current.contains(event.target)) {
+        setIsPopUpVisible(false);
+        document.body.style.overflow = "";
+      }
+    };
+
+    if (isPopUpVisible) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isPopUpVisible]);
 
   const toggleDropdown = () => setIsOpen(!isOpen);
 
@@ -22,14 +51,6 @@ const FashionDropdown = () => {
     };
   }, []);
 
-  const boards = [
-    { name: "Men", icon: boy, locked: true },
-    { name: "Footwear", icon: boy, locked: true },
-    { name: "Jackets", icon: boy, locked: true },
-    { name: "Trousers", icon: boy, locked: true },
-    { name: "Shirts", icon: boy, locked: true, shared: true },
-  ];
-
   return (
     <div className="relative" ref={dropdownRef}>
       <div className="flex">
@@ -42,11 +63,11 @@ const FashionDropdown = () => {
             <SelectArrow />
           </span>
         </button>
-        <button className="border border-red border-s-0 rounded-s-none rounded-full font-semibold text-xs text-white hover:opacity-80 duration-300 bg-red px-3 py-2.5 !leading-[100%] md:h-[37px] h-8">
+        <button onClick={handleShowPopUp} className="border border-red border-s-0 rounded-s-none rounded-full font-semibold text-xs text-white hover:opacity-80 duration-300 bg-red px-3 py-2.5 !leading-[100%] md:h-[37px] h-8">
           Publish
         </button>
       </div>
-
+{/* ======== DROPDOWN ====== */}
       {isOpen && (
         <div className="absolute right-0 z-10 sm:w-[300px] w-[236px] h-[407px] mt-2 bg-white border border-black border-opacity-10 rounded-[20px] shadow-[0px_14px_8.9px_#0000001A] overflow-hidden py-4">
          <div className="px-4">
@@ -92,6 +113,14 @@ const FashionDropdown = () => {
               <Plus />
             </span>{" "}
             <p className="text-xs font-medium text-black">Create Board</p>
+          </div>
+        </div>
+      )}
+      {/* ======== ERROR POPUP ====== */}
+      {isPopUpVisible && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 px-5">
+          <div ref={popUpRef}>
+            <ErrorPopUp />
           </div>
         </div>
       )}

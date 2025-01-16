@@ -1,7 +1,7 @@
 import React from "react";
 import boy from "../../assets/img/boy.webp";
 
-const CommonImg = ({ imgClass, hidden,parentClass }) => {
+const CommonImg = ({ imgClass, hidden,parentClass ,image}) => {
   return (
     <div className={`p-2 ${parentClass}`}>
       <div className="relative rounded-xl overflow-hidden group">
@@ -16,7 +16,7 @@ const CommonImg = ({ imgClass, hidden,parentClass }) => {
             $250.00
           </p>
         </div>
-        <img src={boy} className={imgClass} alt="Product" />
+        <img src={image} className={imgClass} alt="Product" />
       </div>
     </div>
   );
