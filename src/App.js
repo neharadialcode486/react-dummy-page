@@ -6,6 +6,7 @@ import Post from "./pages/Post";
 import PostProduct from "./pages/PostProduct";
 import PostProductDetails from "./pages/PostProductDetails";
 import UserProfile from "./pages/UserProfile";
+import ProductDetails from "./pages/ProductDetails";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/post" element={<Post/>} />
         <Route path="/post-product" element={<PostProduct/>} />
         <Route path="/post-product-details" element={<PostProductDetails/>} />
+        <Route path="/product-details" element={<ProductDetails/>} />
       </Routes>
       <Footer />
     </>

@@ -8,6 +8,7 @@ module.exports = {
         lightGray: "#F8F8F8",
         gray: "#B6B6B6",
         red:"#FF0000",
+        "light-black":"#1E1E1E",
       },
     },
   },
