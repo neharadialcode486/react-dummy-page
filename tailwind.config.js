@@ -12,7 +12,8 @@ module.exports = {
       },
       backgroundImage: {
         'gray-gradient': 'linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%)',
-        'gradient-horizontal': 'linear-gradient(90deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%)'
+        'gradient-horizontal': 'linear-gradient(90deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%)',
+        'white-gradient': 'linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)',
       },
     },
   },
