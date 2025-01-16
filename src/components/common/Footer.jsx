@@ -59,19 +59,19 @@ const Footer = () => {
           <div className="flex gap-5">
             <a
               className="hover:scale-110 transition-all duration-200 ease-in-out inline-block"
-              href="#"
+              href="https://x.com/?mx=2" target="_blank" rel="noreferrer"
             >
               <Twitter />
             </a>
             <a
               className="hover:scale-110 transition-all duration-200 ease-in-out inline-block"
-              href="#"
+              href="https://www.instagram.com/" target="_blank" rel="noreferrer"
             >
               <Insta />
             </a>
             <a
               className="hover:scale-110 transition-all duration-200 ease-in-out inline-block"
-              href="#"
+              href="https://www.facebook.com/" target="_blank" rel="noreferrer"
             >
               <Facebook />
             </a>

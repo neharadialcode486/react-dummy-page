@@ -1,7 +1,6 @@
 import React from "react";
-import Title from "./common/Title";
-import { partnerData } from "./common/Helper";
 import ParnersLogos from "./common/ParnersLogos";
+import Title from "./common/Title";
 
 const Partners = () => {
   return (
