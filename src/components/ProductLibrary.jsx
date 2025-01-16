@@ -15,7 +15,7 @@ const ProductLibrary = () => {
                   [1, 2, 3].includes(index) ? "opacity-0" : "opacity-100"
                 }`}
               >
-                <img src={image.src} alt="hero-image" className="rounded sm:rounded-lg md:rounded-xl lg:rounded-2xl" />
+                <img src={image.src} alt="hero-image" className="rounded sm:rounded-lg md:rounded-xl lg:rounded-2xl w-full" />
                 <div className="absolute bg-white rounded-full p-0.5 md:p-1 md:pe-2.5 pe-1 flex gap-1 md:gap-2.5 items-center left-1 md:left-2.5 bottom-1 md:bottom-2.5">
                   <img
                     src={image.profileImage}

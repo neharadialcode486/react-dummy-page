@@ -151,4 +151,24 @@ export const productLibraryImages = [
     profileImage: heroProfile,
     name: "Added by Purab",
   },
+  {
+    src: hero4,
+    profileImage: heroProfile,
+    name: "Added by Purab",
+  },
+  {
+    src: hero3,
+    profileImage: heroProfile,
+    name: "Added by Purab",
+  },
+  {
+    src: hero4,
+    profileImage: heroProfile,
+    name: "Added by Purab",
+  },
+  {
+    src: hero3,
+    profileImage: heroProfile,
+    name: "Added by Purab",
+  },
 ];
