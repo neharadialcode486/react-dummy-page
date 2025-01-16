@@ -31,7 +31,7 @@ const ErrorProduct = ({goBack}) => {
             <ErrorPopUp />
           </div>
         </div>
-        <div className="mt-7 flex flex-col gap-7">
+        <div className="mt-7 flex flex-col md:gap-7 gap-4">
           <div className="bg-gradient-horizontal rounded-[10px] md:h-[110px] h-20"></div>
           <div className="bg-gradient-horizontal rounded-[15px] h-[50px]"></div>
           <div className="bg-gradient-horizontal rounded-[15px] h-[50px]"></div>

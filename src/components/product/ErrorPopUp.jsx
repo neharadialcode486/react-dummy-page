@@ -2,11 +2,11 @@ import React from "react";
 
 const ErrorPopUp = () => {
   return (
-    <div className="max-w-[648px] w-full bg-white px-12 py-7">
-      <h2 className="font-bold lg:text-[50px] md:text-3xl text-2xl !leading-[140%] text-black text-center mb-3">
+    <div className="max-w-[648px] w-full bg-white sm:px-12 px-4 py-7">
+      <h2 className="font-bold lg:text-[50px] md:text-3xl text-2xl !leading-[140%] text-black text-center mb-2">
         Oh No! Error 404
       </h2>
-      <p className="font-normal xl:text-2xl leading-[125%] text-black text-opacity-60 text-center md:text-lg text-base">
+      <p className="font-normal xl:text-2xl leading-[125%] text-black text-opacity-60 text-center md:text-lg text-sm">
         Oops! That page seems to have taken a detour. Let us guide you back to
         your destination.
       </p>
