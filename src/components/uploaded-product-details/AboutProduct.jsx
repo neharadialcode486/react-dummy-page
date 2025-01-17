@@ -3,7 +3,7 @@ import { Box, QualityCertificate, SelectArrow, Thumb } from "../common/Icons";
 
 const AboutProduct = () => {
   return (
-    <div className="max-w-[577px] w-full lg:mt-8">
+    <div className="lg:max-w-[577px] w-full lg:mt-8">
       <div className="flex items-center gap-6 mb-6">
         <img
           src="https://imgs.search.brave.com/MmCEbSKTE_HkK6Kyg8lX3y1hfuhTrlNkL06cwGqdItw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTc2/MzkyNjcwMC9waG90/by9wb3J0cmFpdC1v/Zi1zbWlsaW5nLXNt/YXJ0LXNjaG9vbC1i/b3ktd2VhcmluZy1i/cmFjZXMtb24tdGVl/dGgtbG9va2luZy1h/dC1jYW1lcmEtZWR1/Y2F0aW9uLmpwZz9i/PTEmcz0xNzB4MTcw/Jms9MjAmYz1HSXRH/cUpXZktvQXZSN3VH/QnZpU1EtaHVGMjl2/UDdBeHJITmFkWjdr/bFVNPQ"
