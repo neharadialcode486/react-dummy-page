@@ -76,7 +76,7 @@ const MyStats = () => {
             open={false}
           />
           <ChartAccordion
-            title="Stats"
+            title="Views"
             desc="Another description for accordion 2."
             color="#ff0000"
             chart={chartData3}
