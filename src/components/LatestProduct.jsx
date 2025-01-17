@@ -1,7 +1,6 @@
 import React from "react";
-import Title from "./common/Title";
-import boy from "../assets/img/boy.webp";
 import Products from "./common/Products";
+import Title from "./common/Title";
 
 const LatestProduct = () => {
   return (

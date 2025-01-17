@@ -1,5 +1,4 @@
 import React from "react";
-import boy from "../../assets/img/boy.webp";
 import { Box, QualityCertificate, SelectArrow, Thumb } from "../common/Icons";
 
 const AboutProduct = () => {
