@@ -3,8 +3,7 @@ import {
   budgetOptions,
   categoryOptions,
   colors,
-  sizes,
-  userOption,
+  sizes
 } from "../common/Helper";
 import CommonSelect from "./CommonSelect";
 
@@ -13,7 +12,6 @@ const ProductDescription = () => {
   const [selectedSize, setSelectedSize] = useState(null);
   const [selectedBudget, setSelectedBudget] = useState(budgetOptions[0]);
   const [selectedCategory, setSelectedCategory] = useState(categoryOptions[0]);
-  const [selectedUser, setSelectedUser] = useState(userOption[0]);
   return (
     <div className="flex items-center justify-center mt-6">
       <div className="w-full flex flex-col gap-[22px]">
