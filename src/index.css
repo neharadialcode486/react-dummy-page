@@ -1,10 +1,10 @@
 .scrollbar_hidden::-webkit-scrollbar {
   display: none;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 4px;
   height: 4px;
 }
-::-webkit-scrollbar-thumb{
-  background-color: #FF0000;
+::-webkit-scrollbar-thumb {
+  background-color: #ff0000;
 }
