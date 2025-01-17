@@ -1,5 +1,7 @@
 import React from "react";
 import ProductLibrary from "./ProductLibrary";
+import HeroWhiteCard from "./common/HeroWhiteCard";
+import { CartIcon, SearchIcon } from "./common/Icons";
 
 const Hero = () => {
   return (
@@ -11,6 +13,26 @@ const Hero = () => {
         From timeless classics to modern essentials, discover the perfect look
         for every occasion.
       </p>
+      <div className="absolute z-[1] left-[50%] translate-x-[-50%] sm:bottom-[-10%] bottom-[-20%] rotate-[10deg]">
+        <HeroWhiteCard />
+        <div className="absolute -left-[20%] top-[40%] -rotate-[10deg]">
+          <div className="flex rounded-full border border-[#a6a6a6] bg-white py-3 px-3 gap-2 text-sm">
+            <span>
+              <SearchIcon />
+            </span>
+            <p className="text-black opacity-50">Find Your Favorite Product</p>
+          </div>
+        </div>
+        <div className="absolute -right-[10%] sm:bottom-[40%] bottom-[20%] -rotate-[10deg]">
+          <div className="flex rounded-full border border-[#a6a6a6] bg-white py-3 px-3 gap-2 text-sm">
+            <p className="text-black ">Add Cart</p>
+            <span className="relative">
+              <span className="inline-block w-[6px] h-[6px] rounded-full bg-red top-[-5px] right-[-5px] absolute"></span>
+              <CartIcon />
+            </span>
+          </div>
+        </div>
+      </div>
       <div className="flex justify-center lg:gap-4 md:gap-3 gap-1">
         <button className="bg-primary text-white lg:text-base md:text-sm text-xs px-3 md:px-8 md:py-3 py-2 rounded-full !leading-[125%] font-semibold hover:bg-transparent border-primary border hover:text-primary transition-all duration-200 ease-in-out">
           Shop Now
@@ -19,12 +41,10 @@ const Hero = () => {
           Explore Collections
         </button>
       </div>
-      <div className="absolute sm:top-[100px] top-[120px] left-1/2 w-full xl:min-w-[1720px] lg:min-w-[1400px] md:min-w-[1100px] sm:min-w-[900px] min-[500px]:min-w-[700px] min-w-[550px] -translate-x-1/2 pointer-events-none">
-        <ProductLibrary/>
+      <div className="absolute opacity-40 sm:top-[100px] top-[120px] left-1/2 w-full xl:min-w-[1720px] lg:min-w-[1400px] md:min-w-[1100px] sm:min-w-[900px] min-[500px]:min-w-[700px] min-w-[550px] -translate-x-1/2 pointer-events-none">
+        <ProductLibrary />
       </div>
-      <div className="md:h-[300px] h-[150px] absolute -bottom-1 pointer-events-none w-full left-0 bg-white-gradient">
-
-      </div>
+      <div className="md:h-[300px] h-[150px] absolute -bottom-1 pointer-events-none w-full left-0 bg-white-gradient z-[2]"></div>
     </div>
   );
 };
