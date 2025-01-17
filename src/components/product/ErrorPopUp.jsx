@@ -11,7 +11,7 @@ const ErrorPopUp = () => {
         your destination.
       </p>
       <div className="flex justify-center">
-      <a href="/" className="lg:mt-7 mt-4 bg-primary text-white px-6 md:px-8 py-[10px] rounded-[20px] hover:bg-transparent border-primary border hover:text-primary transition-all duration-200 ease-in-out">
+      <a href="/" className="lg:mt-7 mt-4 bg-primary text-white px-6 md:px-8 py-[10px] rounded-full hover:bg-transparent border-primary border hover:text-primary transition-all duration-200 ease-in-out">
         Back to Homepage
       </a>
       </div>

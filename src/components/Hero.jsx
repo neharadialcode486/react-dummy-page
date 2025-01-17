@@ -48,7 +48,7 @@ const Hero = () => {
       <div className="absolute z-[1] left-[50%] translate-x-[-50%] sm:bottom-[-10%] bottom-[-20%] rotate-[10deg]">
         <HeroWhiteCard />
         <div className="absolute -left-[20%] top-[40%] -rotate-[10deg]">
-          <div className="flex rounded-full border border-[#a6a6a6] bg-white py-3 px-3 gap-2 text-sm">
+          <div className="flex rounded-full border border-[#a6a6a6] bg-white py-2 px-3 gap-2 text-xs items-center">
             <span>
               <SearchIcon />
             </span>
