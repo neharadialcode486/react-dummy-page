@@ -1,6 +1,12 @@
 import React, { useState } from "react";
+import {
+  budgetOptions,
+  categoryOptions,
+  colors,
+  sizes,
+  userOption,
+} from "../common/Helper";
 import CommonSelect from "./CommonSelect";
-import { budgetOptions, categoryOptions, colors, sizes, userOption } from "../common/Helper";
 
 const ProductDescription = () => {
   const [selectedColor, setSelectedColor] = useState(null);
@@ -51,14 +57,47 @@ const ProductDescription = () => {
           </div>
         </div>
         <div className="rounded-[10px] bg-white min-[393px]:px-6 px-3 py-8 flex flex-col gap-6">
-          <div className="grid grid-cols-2 gap-3.5">
-            <CommonSelect
-              label="Select User"
-              options={userOption}
-              selected={selectedUser}
-              onSelect={setSelectedUser}
-              selectClass="bg-lightGray"
-            />
+          <div className="grid sm:grid-cols-2 grid-cols-1 gap-3.5">
+            <div>
+              <label className="block mb-3 font-normal md:text-base text-sm !leading-[125%]">
+                Select User
+              </label>
+              <div className="flex gap-2">
+                <div className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    className="size-5 cursor-pointer"
+                    id="men"
+                    name="gender" 
+                  />
+                  <label htmlFor="men" className="cursor-pointer">
+                    Men
+                  </label>
+                </div>
+                <div className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    className="size-5 cursor-pointer"
+                    id="women"
+                    name="gender" 
+                  />
+                  <label htmlFor="women" className="cursor-pointer">
+                    Women
+                  </label>
+                </div>
+                <div className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    className="size-5 cursor-pointer"
+                    id="kids"
+                    name="gender" 
+                  />
+                  <label htmlFor="kids" className="cursor-pointer">
+                    Kids
+                  </label>
+                </div>
+              </div>
+            </div>
             <CommonSelect
               label="Category"
               options={categoryOptions}

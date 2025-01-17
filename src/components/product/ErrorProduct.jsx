@@ -23,20 +23,20 @@ const ErrorProduct = ({goBack}) => {
           desc="Paste a product link from your favorite online stores to start uploading."
         />
         <div className="grid md:grid-cols-4 grid-cols-2 md:gap-4 gap-2 lg:gap-8 mt-10 relative">
-          <div className="rounded-[15px] w-full md:h-[461px] h-[250px] bg-gray-gradient"></div>
-          <div className="rounded-[15px] w-full md:h-[461px] h-[250px] bg-gray-gradient"></div>
-          <div className="rounded-[15px] w-full md:h-[461px] h-[250px] bg-gray-gradient"></div>
-          <div className="rounded-[15px] w-full md:h-[461px] h-[250px] bg-gray-gradient"></div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex justify-center">
+          <div className="rounded-[15px] w-full md:h-[461px] h-[200px] g-gray-gradient skeleton-loader-vertical"></div>
+          <div className="rounded-[15px] w-full md:h-[461px] h-[200px] g-gray-gradient skeleton-loader-vertical"></div>
+          <div className="rounded-[15px] w-full md:h-[461px] h-[200px] g-gray-gradient skeleton-loader-vertical"></div>
+          <div className="rounded-[15px] w-full md:h-[461px] h-[200px] g-gray-gradient skeleton-loader-vertical"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex justify-center max-sm:w-[350px]">
             <ErrorPopUp />
           </div>
         </div>
         <div className="mt-7 flex flex-col md:gap-7 gap-4">
-          <div className="bg-gradient-horizontal rounded-[10px] md:h-[110px] h-20"></div>
-          <div className="bg-gradient-horizontal rounded-[15px] h-[50px]"></div>
-          <div className="bg-gradient-horizontal rounded-[15px] h-[50px]"></div>
-          <div className="bg-gradient-horizontal rounded-[15px] h-[50px]"></div>
-          <div className="bg-gradient-horizontal rounded-[10px] md:h-[148px] h-[100px]"></div>
+          <div className="rounded-[10px] md:h-[110px] h-20 skeleton-loader"></div>
+          <div className="rounded-[15px] h-[50px] skeleton-loader"></div>
+          <div className="rounded-[15px] h-[50px] skeleton-loader"></div>
+          <div className="rounded-[15px] h-[50px] skeleton-loader"></div>
+          <div className="rounded-[10px] md:h-[148px] h-[100px] skeleton-loader"></div>
         </div>
       </div>
     </div>
