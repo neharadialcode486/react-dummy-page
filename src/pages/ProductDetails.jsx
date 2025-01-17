@@ -1,6 +1,7 @@
 import React from 'react'
 import AboutProduct from '../components/uploaded-product-details/AboutProduct'
 import ProductImages from '../components/uploaded-product-details/ProductImages'
+import RecentlyMatched from '../components/uploaded-product-details/RecentlyMatched'
 
 const ProductDetails = () => {
   return (
@@ -9,6 +10,7 @@ const ProductDetails = () => {
         <ProductImages/>
         <AboutProduct/>
       </div>
+      <RecentlyMatched/>
     </div>
   )
 }

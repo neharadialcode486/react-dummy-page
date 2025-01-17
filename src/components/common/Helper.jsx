@@ -172,3 +172,111 @@ export const productLibraryImages = [
     name: "Added by Purab",
   },
 ];
+
+export const recentlySaved=[
+  {
+    id: 1,
+    src: "https://imgs.search.brave.com/MmCEbSKTE_HkK6Kyg8lX3y1hfuhTrlNkL06cwGqdItw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTc2/MzkyNjcwMC9waG90/by9wb3J0cmFpdC1v/Zi1zbWlsaW5nLXNt/YXJ0LXNjaG9vbC1i/b3ktd2VhcmluZy1i/cmFjZXMtb24tdGVl/dGgtbG9va2luZy1h/dC1jYW1lcmEtZWR1/Y2F0aW9uLmpwZz9i/PTEmcz0xNzB4MTcw/Jms9MjAmYz1HSXRH/cUpXZktvQXZSN3VH/QnZpU1EtaHVGMjl2/UDdBeHJITmFkWjdr/bFVNPQ",
+  },
+  {
+    id: 2,
+    src: "https://imgs.search.brave.com/MmCEbSKTE_HkK6Kyg8lX3y1hfuhTrlNkL06cwGqdItw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTc2/MzkyNjcwMC9waG90/by9wb3J0cmFpdC1v/Zi1zbWlsaW5nLXNt/YXJ0LXNjaG9vbC1i/b3ktd2VhcmluZy1i/cmFjZXMtb24tdGVl/dGgtbG9va2luZy1h/dC1jYW1lcmEtZWR1/Y2F0aW9uLmpwZz9i/PTEmcz0xNzB4MTcw/Jms9MjAmYz1HSXRH/cUpXZktvQXZSN3VH/QnZpU1EtaHVGMjl2/UDdBeHJITmFkWjdr/bFVNPQ",
+  },
+  {
+    id: 3,
+    src:"https://imgs.search.brave.com/MmCEbSKTE_HkK6Kyg8lX3y1hfuhTrlNkL06cwGqdItw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTc2/MzkyNjcwMC9waG90/by9wb3J0cmFpdC1v/Zi1zbWlsaW5nLXNt/YXJ0LXNjaG9vbC1i/b3ktd2VhcmluZy1i/cmFjZXMtb24tdGVl/dGgtbG9va2luZy1h/dC1jYW1lcmEtZWR1/Y2F0aW9uLmpwZz9i/PTEmcz0xNzB4MTcw/Jms9MjAmYz1HSXRH/cUpXZktvQXZSN3VH/QnZpU1EtaHVGMjl2/UDdBeHJITmFkWjdr/bFVNPQ",
+  },
+  {
+    id: 4,
+    src: "https://imgs.search.brave.com/MmCEbSKTE_HkK6Kyg8lX3y1hfuhTrlNkL06cwGqdItw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTc2/MzkyNjcwMC9waG90/by9wb3J0cmFpdC1v/Zi1zbWlsaW5nLXNt/YXJ0LXNjaG9vbC1i/b3ktd2VhcmluZy1i/cmFjZXMtb24tdGVl/dGgtbG9va2luZy1h/dC1jYW1lcmEtZWR1/Y2F0aW9uLmpwZz9i/PTEmcz0xNzB4MTcw/Jms9MjAmYz1HSXRH/cUpXZktvQXZSN3VH/QnZpU1EtaHVGMjl2/UDdBeHJITmFkWjdr/bFVNPQ",
+  },
+  
+]
+
+export const RecentlyMatchedProducts=[
+  {
+    profileImage:heroProfile,
+    name:"Greg L. Grover",
+    productImage:product1,
+  },
+  {
+    profileImage:heroProfile,
+    name:"Greg L. Grover",
+    productImage:hero1,
+  },
+  {
+    profileImage:heroProfile,
+    name:"Greg L. Grover",
+    productImage:product3,
+  },
+  {
+    profileImage:heroProfile,
+    name:"Greg L. Grover",
+    productImage:hero2,
+  },
+  {
+    profileImage:heroProfile,
+    name:"Greg L. Grover",
+    productImage:product1,
+  },
+  {
+    profileImage:heroProfile,
+    name:"Greg L. Grover",
+    productImage:product2,
+  },
+  {
+    profileImage:heroProfile,
+    name:"Greg L. Grover",
+    productImage:hero3,
+  },
+  {
+    profileImage:heroProfile,
+    name:"Greg L. Grover",
+    productImage:product4,
+  },
+  {
+    profileImage:heroProfile,
+    name:"Greg L. Grover",
+    productImage:hero4,
+  },
+  {
+    profileImage:heroProfile,
+    name:"Greg L. Grover",
+    productImage:product2,
+  },
+  {
+    profileImage:heroProfile,
+    name:"Greg L. Grover",
+    productImage:hero2,
+  },
+  {
+    profileImage:heroProfile,
+    name:"Greg L. Grover",
+    productImage:product4,
+  },
+  {
+    profileImage:heroProfile,
+    name:"Greg L. Grover",
+    productImage:hero2,
+  },
+  {
+    profileImage:heroProfile,
+    name:"Greg L. Grover",
+    productImage:hero3,
+  },
+  {
+    profileImage:heroProfile,
+    name:"Greg L. Grover",
+    productImage:hero2,
+  },
+  {
+    profileImage:heroProfile,
+    name:"Greg L. Grover",
+    productImage:hero3,
+  },
+  {
+    profileImage:heroProfile,
+    name:"Greg L. Grover",
+    productImage:hero2,
+  },
+]
