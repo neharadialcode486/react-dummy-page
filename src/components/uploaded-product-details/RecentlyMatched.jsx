@@ -34,8 +34,7 @@ const RecentlyMatched = () => {
       <h2 className="text-black text-2xl md:text-3xl lg:text-[40px] font-bold mb-5">
         Recently match
       </h2>
-      <div className="xl:h-[1000px] lg:h-[900px] md:h-[650px] sm:h-[600px] h-[400px] overflow-auto">
-      <div className="relative">
+      <div className="relative pb-10">
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 2, 768: 3, 1200: 3 }}
         >
@@ -71,7 +70,6 @@ const RecentlyMatched = () => {
             More like this
           </button>
         </div>
-      </div>
       </div>
     </div>
   );
