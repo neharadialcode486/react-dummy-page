@@ -25,7 +25,7 @@ const AddProduct = ({ onFetchProduct, onError }) => {
             desc="Paste a product link from your favorite online stores to start uploading."
           />
           <a
-            href="#"
+            href="#howitwork"
             className="font-normal md:text-sm text-xs text-black !leading-[160%] text-nowrap"
           >
             How it works?

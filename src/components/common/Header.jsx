@@ -67,21 +67,21 @@ const Header = () => {
             <CrossIcon />
           </span>
           <a
-            href="#"
+            href="#home"
             className="text-2xl my-2 hover:underline"
             onClick={closeOverlay}
           >
             Home
           </a>
           <a
-            href="#"
+            href="#about"
             className="text-2xl my-2 hover:underline"
             onClick={closeOverlay}
           >
             About
           </a>
           <a
-            href="#"
+            href="#contact"
             className="text-2xl my-2 hover:underline"
             onClick={closeOverlay}
           >

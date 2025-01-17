@@ -1,7 +1,6 @@
 import React from "react";
-import boy from "../../assets/img/boy.webp";
 
-const CommonImg = ({ imgClass, hidden,parentClass ,image}) => {
+const CommonImg = ({ imgClass,parentClass ,image}) => {
   return (
     <div className={`p-2 ${parentClass}`}>
       <div className="relative rounded-xl overflow-hidden group">
