@@ -14,7 +14,6 @@ const Products = () => {
   const handleViewMore = () => {
     setVisibleImages(images.length);
   };
-  
 
   const handleShowLess = () => {
     setVisibleImages(initialVisibleImages);
@@ -58,7 +57,7 @@ const Products = () => {
           <Masonry>
             {isWideScreen && (
               <CommonImg
-                imgClass="lg:h-[250px] sm:h-[150px] h-[200px] w-full object-cover rounded-xl"
+                imgClass=" w-full object-cover rounded-xl"
                 image={boy}
               />
             )}
