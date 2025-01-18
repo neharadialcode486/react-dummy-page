@@ -20,10 +20,10 @@ import hero2 from "../../assets/img/hero-image-2.png";
 import hero3 from "../../assets/img/hero-image-3.png";
 import hero4 from "../../assets/img/hero-image-4.png";
 import heroProfile from "../../assets/img/profile-image.png";
-import safari1 from "../../assets/img/safari-1.png"
-import safari2 from "../../assets/img/safari-2.png"
-import safari3 from "../../assets/img/safari-3.png"
-import chrome1 from "../../assets/img/chrome-1.png"
+import safari1 from "../../assets/img/safari-1.png";
+import safari2 from "../../assets/img/safari-2.png";
+import safari3 from "../../assets/img/safari-3.png";
+import chrome1 from "../../assets/img/chrome-1.png";
 export const partnerData = [
   {
     imgUrl: partner1,
@@ -322,5 +322,80 @@ export const chromeDownloadSteps = [
     title: "Name the Shortcut",
     description: "Look for the Share icon, shaped like a square with an arrow.",
     image: safari3,
+  },
+];
+
+export const productCollection = [
+  {
+    type: "product",
+    images: [
+      {
+        url: product1,
+      },
+      {
+        url: hero2,
+      },
+      {
+        url: product3,
+      },
+      {
+        url: product2,
+      },
+      {
+        url: product4,
+      },
+      {
+        url: hero2,
+      },
+      {
+        url: product1,
+      },
+      {
+        url: hero2,
+      },
+      {
+        url: product3,
+      },
+      {
+        url: product2,
+      },
+      {
+        url: product4,
+      },
+      {
+        url: hero2,
+      },
+    ],
+    title: "Product 1",
+  },
+  {
+    type: "collection",
+    images: [
+      {
+        url: hero2,
+      },
+      {
+        url: hero2,
+      },
+      {
+        url: product2,
+      },
+      {
+        url: product2,
+      },
+      {
+        url: hero2,
+      },
+      {
+        url: hero2,
+      },
+      {
+        url: product2,
+      },
+      {
+        url: product2,
+      },
+    ],
+    title: "Collection Shirts",
   },
 ];
