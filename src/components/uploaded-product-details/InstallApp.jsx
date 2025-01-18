@@ -22,8 +22,11 @@ const InstallApp = () => {
   
       if (isPopUpVisible) {
         document.addEventListener("mousedown", handleClickOutside);
+        
       } else {
         document.removeEventListener("mousedown", handleClickOutside);
+        document.body.style.overflow = "";
+
       }
   
       return () => {

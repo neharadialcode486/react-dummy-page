@@ -34,8 +34,10 @@ const BrowserPopUp = () => {
 
     if (isPopupOpen) {
       document.addEventListener("mousedown", handleOutsideClick);
+      
     } else {
       document.removeEventListener("mousedown", handleOutsideClick);
+      document.body.style.overflow = "";
     }
 
     return () => {
