@@ -41,7 +41,7 @@ const Products = () => {
             {images.slice(0, visibleImages).map((img, index) => (
               <CommonImg
                 key={index}
-                imgClass="w-full object-cover"
+                imgClass={`w-full object-cover ${img.imgClass}`}
                 image={img.url}
               />
             ))}
@@ -67,7 +67,7 @@ const Products = () => {
             {images.slice(0, visibleImages).map((img, index) => (
               <CommonImg
                 key={index}
-                imgClass="object-cover w-full"
+                imgClass={`w-full object-cover ${img.imgClass}`}
                 image={img.url}
               />
             ))}
