@@ -94,16 +94,15 @@ const BrowserPopUp = () => {
         Select Browser
       </button>
 
-      {isPopupOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 bottom-0 flex items-end">
+
+        <div className={`fixed inset-0 bg-black bg-opacity-50 z-50 bottom-0 flex items-end duration-300 ease-in-out ${isPopupOpen?"opacity-100 pointer-events-auto":"opacity-0 pointer-events-none"}`}>
           <div
             ref={popupRef}
-            className="w-full relative"
+            className={`w-full relative duration-300 ease-in-out ${isPopupOpen? "bottom-0":"-bottom-full"}`}
           >
             {renderPopupContent()}
           </div>
         </div>
-      )}
     </div>
   );
 };

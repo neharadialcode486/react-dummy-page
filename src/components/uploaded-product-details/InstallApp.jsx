@@ -39,13 +39,13 @@ const InstallApp = () => {
         <button onClick={handleShowPopUp} className="bg-primary text-white px-5 py-1.5 text-sm font-semibold rounded-full hover:bg-transparent border-primary border hover:text-primary transition-all duration-200 ease-in-out">
          Install
         </button>
-        {isPopUpVisible && (
-        <div className="fixed inset-0 flex items-end justify-center bg-black bg-opacity-50 z-50">
-          <div className='w-full' ref={installPopUp}>
+       
+        <div className={`fixed inset-0 flex items-end justify-center bg-black bg-opacity-50 z-50 duration-300 ease-in-out ${isPopUpVisible?"opacity-100 pointer-events-auto":"opacity-0 pointer-events-none"}`}>
+          <div className={`w-full absolute duration-300 ease-in-out ${isPopUpVisible? "bottom-0":"-bottom-full"}`} ref={installPopUp}>
          <BrowserPopUp/>
           </div>
         </div>
-      )}
+      
     </div>
   )
 }

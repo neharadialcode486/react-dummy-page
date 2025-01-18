@@ -1,9 +1,9 @@
 import React from "react";
 import { Copyright, Facebook, Insta, Twitter } from "./Icons";
 import logo from "../../assets/img/white-logo.png";
-import footer1 from "../../assets/img/footer-1.png"
-import footer2 from "../../assets/img/footer-2.png"
-import footer3 from "../../assets/img/footer-3.png"
+import footer1 from "../../assets/img/product-1.png"
+import footer2 from "../../assets/img/product-2.png"
+import footer3 from "../../assets/img/product-3.png"
 
 const Footer = () => {
   return (

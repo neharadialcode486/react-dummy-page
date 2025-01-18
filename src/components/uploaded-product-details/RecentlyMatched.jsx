@@ -49,7 +49,7 @@ const RecentlyMatched = () => {
                     <img
                       src={product.profileImage}
                       alt="profile"
-                      className="md:size-[60px] size-[34px] rounded-full object-cover"
+                      className="md:size-[60px] size-7 rounded-full object-cover"
                     />
                     <p className="font-medium text-xs text-[#1E1E1E] lg:text-xl md:text-lg text-nowrap overflow-ellipsis overflow-hidden max-w-full">
                       {product.name}
