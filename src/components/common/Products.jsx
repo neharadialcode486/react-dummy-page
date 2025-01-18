@@ -4,11 +4,12 @@ import boy from "../../assets/img/boy.webp";
 import MiddleImgs from "./MiddleImgs";
 import CommonImg from "./CommonImg";
 import { productCollection } from "./Helper";
+import boy2 from "../../assets/img/product-1.png";
 
 const Products = () => {
   const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 640);
   const [value, setValue] = useState("");
-  const [visibleImages, setVisibleImages] = useState(7);
+  const [visibleImages, setVisibleImages] = useState(10);
   const initialVisibleImages = 7;
 
   const handleViewMore = () => {
@@ -62,7 +63,10 @@ const Products = () => {
               />
             )}
             <MiddleImgs collections={productCollection[1]?.images || []} />
-            <span className="inline-block lg:h-[747px] sm:h-[560px] h-[500px] "></span>
+            <span className="inline-block ">
+              <img className="opacity-0 w-full" src={boy} alt="boy" />
+              <img className="opacity-0 w-full" src={boy2} alt="boy" />
+            </span>
             {images.slice(0, visibleImages).map((img, index) => (
               <CommonImg
                 key={index}
