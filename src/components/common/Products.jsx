@@ -33,7 +33,7 @@ const Products = () => {
 
   return (
     <div>
-      {value === "images" ? (
+      {value === productCollection[0]?.type ? (
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 2, 750: 3, 1200: 4 }}
         >
@@ -41,13 +41,13 @@ const Products = () => {
             {images.slice(0, visibleImages).map((img, index) => (
               <CommonImg
                 key={index}
-                imgClass={`w-full object-cover ${img.imgClass}`}
+                imgClass="w-full object-cover"
                 image={img.url}
               />
             ))}
           </Masonry>
         </ResponsiveMasonry>
-      ) : value === "content" ? (
+      ) : value === productCollection[1]?.type ? (
         <div className="max-w-[525px]">
           <MiddleImgs collections={productCollection[1]?.images || []} />
         </div>
@@ -67,14 +67,14 @@ const Products = () => {
             {images.slice(0, visibleImages).map((img, index) => (
               <CommonImg
                 key={index}
-                imgClass={`w-full object-cover ${img.imgClass}`}
+                imgClass="w-full object-cover"
                 image={img.url}
               />
             ))}
           </Masonry>
         </ResponsiveMasonry>
       )}
-      {value === "content" ? (
+      {value === productCollection[1]?.type ? (
         ""
       ) : (
         <div className="text-center">

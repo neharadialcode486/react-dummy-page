@@ -331,69 +331,45 @@ export const productCollection = [
     images: [
       {
         url: product1,
-        imgClass:
-        "lg:h-[400px] sm:h-[300px] h-[100px] w-full object-cover rounded-xl",
       },
       {
         url: hero2,
-        imgClass:
-        "lg:h-[450px] sm:h-[350px] h-[250px] w-full object-cover rounded-xl",
       },
       {
         url: product3,
-        imgClass:
-        "lg:h-[550px] sm:h-[450px] h-[300px] w-full object-cover rounded-xl",
       },
       {
         url: product2,
-        imgClass:
-        "lg:h-[500px] sm:h-[400px] h-[250px] w-full object-cover rounded-xl",
       },
       {
         url: product4,
-        imgClass:
-        "lg:h-[480px] sm:h-[380px] h-[180px] w-full object-cover rounded-xl",
       },
       {
         url: hero2,
-        imgClass:
-        "lg:h-[500px] sm:h-[250px] h-[200px] w-full object-cover rounded-xl",
       },
       {
         url: product2,
-        imgClass:
-        "lg:h-[270px] sm:h-[170px] h-[100px] w-full object-cover rounded-xl",
       },
       {
         url: hero2,
-        imgClass:
-        "lg:h-[270px] sm:h-[170px] h-[100px] w-full object-cover rounded-xl",
       },
       {
         url: product3,
-        imgClass:
-        "lg:h-[270px] sm:h-[170px] h-[100px] w-full object-cover rounded-xl",
       },
       {
         url: product2,
-        imgClass:
-        "lg:h-[270px] sm:h-[170px] h-[100px] w-full object-cover rounded-xl",
       },
       {
         url: product4,
-       
       },
       {
         url: product3,
-       
       },
       {
         url: product2,
-       
       },
       {
         url: product4,
-       
       },
     ],
     title: "Product 1",
