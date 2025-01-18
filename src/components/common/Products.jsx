@@ -3,18 +3,73 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import boy from "../../assets/img/boy.webp";
 import MiddleImgs from "./MiddleImgs";
 import CommonImg from "./CommonImg";
-import { productCollection } from "./Helper";
 
 const Products = () => {
   const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 640);
   const [value, setValue] = useState("");
   const [visibleImages, setVisibleImages] = useState(7);
   const initialVisibleImages = 7;
+  const images = [
+    {
+      imgClass:
+        "lg:h-[400px] sm:h-[300px] h-[100px] w-full object-cover rounded-xl",
+      image: boy,
+    },
+    {
+      imgClass:
+        "lg:h-[450px] sm:h-[350px] h-[250px] w-full object-cover rounded-xl",
+      image: boy,
+    },
+    {
+      imgClass:
+        "lg:h-[550px] sm:h-[450px] h-[300px] w-full object-cover rounded-xl",
+      image: boy,
+    },
+    {
+      imgClass:
+        "lg:h-[500px] sm:h-[400px] h-[250px] w-full object-cover rounded-xl",
+      image: boy,
+    },
+    {
+      imgClass:
+        "lg:h-[480px] sm:h-[380px] h-[180px] w-full object-cover rounded-xl",
+      image: boy,
+    },
+    {
+      imgClass:
+        "lg:h-[500px] sm:h-[250px] h-[200px] w-full object-cover rounded-xl",
+      image: boy,
+    },
+    {
+      imgClass:
+        "lg:h-[270px] sm:h-[170px] h-[100px] w-full object-cover rounded-xl",
+      image: boy,
+    },
+    {
+      imgClass:
+        "lg:h-[270px] sm:h-[170px] h-[100px] w-full object-cover rounded-xl",
+      image: boy,
+    },
+    {
+      imgClass:
+        "lg:h-[270px] sm:h-[170px] h-[100px] w-full object-cover rounded-xl",
+      image: boy,
+    },
+    {
+      imgClass:
+        "lg:h-[270px] sm:h-[170px] h-[100px] w-full object-cover rounded-xl",
+      image: boy,
+    },
+    {
+      imgClass:
+        "lg:h-[480px] sm:h-[380px] h-[180px] w-full object-cover rounded-xl",
+      image: boy,
+    },
+  ];
 
   const handleViewMore = () => {
-    setVisibleImages(images.length);
+    setVisibleImages((prev) => Math.min(prev + 4, images.length));
   };
-  
 
   const handleShowLess = () => {
     setVisibleImages(initialVisibleImages);
@@ -29,7 +84,6 @@ const Products = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  const images = productCollection[0]?.images;
 
   return (
     <div>
@@ -41,15 +95,15 @@ const Products = () => {
             {images.slice(0, visibleImages).map((img, index) => (
               <CommonImg
                 key={index}
-                imgClass="w-full object-cover"
-                image={img.url}
+                imgClass={img.imgClass}
+                image={img.image}
               />
             ))}
           </Masonry>
         </ResponsiveMasonry>
       ) : value === "content" ? (
         <div className="max-w-[525px]">
-          <MiddleImgs collections={productCollection[1]?.images || []} />
+          <MiddleImgs />
         </div>
       ) : (
         <ResponsiveMasonry
@@ -62,13 +116,13 @@ const Products = () => {
                 image={boy}
               />
             )}
-            <MiddleImgs collections={productCollection[1]?.images || []} />
+            <MiddleImgs />
             <span className="inline-block lg:h-[747px] sm:h-[560px] h-[500px] "></span>
             {images.slice(0, visibleImages).map((img, index) => (
               <CommonImg
                 key={index}
-                imgClass="object-cover w-full"
-                image={img.url}
+                imgClass={img.imgClass}
+                image={img.image}
               />
             ))}
           </Masonry>
