@@ -89,7 +89,7 @@ const Products = () => {
               View More
             </button>
           )}
-          {visibleImages > initialVisibleImages && (
+          {visibleImages >= images.length && (
             <button
               onClick={handleShowLess}
               className="mt-8 mb-4 bg-primary text-white px-6 md:px-8 py-[10px] rounded-full hover:bg-transparent border-primary border hover:text-primary transition-all duration-200 ease-in-out"
