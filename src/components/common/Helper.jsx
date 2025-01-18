@@ -20,6 +20,10 @@ import hero2 from "../../assets/img/hero-image-2.png";
 import hero3 from "../../assets/img/hero-image-3.png";
 import hero4 from "../../assets/img/hero-image-4.png";
 import heroProfile from "../../assets/img/profile-image.png";
+import safari1 from "../../assets/img/safari-1.png"
+import safari2 from "../../assets/img/safari-2.png"
+import safari3 from "../../assets/img/safari-3.png"
+import chrome1 from "../../assets/img/chrome-1.png"
 export const partnerData = [
   {
     imgUrl: partner1,
@@ -173,7 +177,7 @@ export const productLibraryImages = [
   },
 ];
 
-export const recentlySaved=[
+export const recentlySaved = [
   {
     id: 1,
     src: "https://imgs.search.brave.com/MmCEbSKTE_HkK6Kyg8lX3y1hfuhTrlNkL06cwGqdItw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTc2/MzkyNjcwMC9waG90/by9wb3J0cmFpdC1v/Zi1zbWlsaW5nLXNt/YXJ0LXNjaG9vbC1i/b3ktd2VhcmluZy1i/cmFjZXMtb24tdGVl/dGgtbG9va2luZy1h/dC1jYW1lcmEtZWR1/Y2F0aW9uLmpwZz9i/PTEmcz0xNzB4MTcw/Jms9MjAmYz1HSXRH/cUpXZktvQXZSN3VH/QnZpU1EtaHVGMjl2/UDdBeHJITmFkWjdr/bFVNPQ",
@@ -184,99 +188,139 @@ export const recentlySaved=[
   },
   {
     id: 3,
-    src:"https://imgs.search.brave.com/MmCEbSKTE_HkK6Kyg8lX3y1hfuhTrlNkL06cwGqdItw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTc2/MzkyNjcwMC9waG90/by9wb3J0cmFpdC1v/Zi1zbWlsaW5nLXNt/YXJ0LXNjaG9vbC1i/b3ktd2VhcmluZy1i/cmFjZXMtb24tdGVl/dGgtbG9va2luZy1h/dC1jYW1lcmEtZWR1/Y2F0aW9uLmpwZz9i/PTEmcz0xNzB4MTcw/Jms9MjAmYz1HSXRH/cUpXZktvQXZSN3VH/QnZpU1EtaHVGMjl2/UDdBeHJITmFkWjdr/bFVNPQ",
+    src: "https://imgs.search.brave.com/MmCEbSKTE_HkK6Kyg8lX3y1hfuhTrlNkL06cwGqdItw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTc2/MzkyNjcwMC9waG90/by9wb3J0cmFpdC1v/Zi1zbWlsaW5nLXNt/YXJ0LXNjaG9vbC1i/b3ktd2VhcmluZy1i/cmFjZXMtb24tdGVl/dGgtbG9va2luZy1h/dC1jYW1lcmEtZWR1/Y2F0aW9uLmpwZz9i/PTEmcz0xNzB4MTcw/Jms9MjAmYz1HSXRH/cUpXZktvQXZSN3VH/QnZpU1EtaHVGMjl2/UDdBeHJITmFkWjdr/bFVNPQ",
   },
   {
     id: 4,
     src: "https://imgs.search.brave.com/MmCEbSKTE_HkK6Kyg8lX3y1hfuhTrlNkL06cwGqdItw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTc2/MzkyNjcwMC9waG90/by9wb3J0cmFpdC1v/Zi1zbWlsaW5nLXNt/YXJ0LXNjaG9vbC1i/b3ktd2VhcmluZy1i/cmFjZXMtb24tdGVl/dGgtbG9va2luZy1h/dC1jYW1lcmEtZWR1/Y2F0aW9uLmpwZz9i/PTEmcz0xNzB4MTcw/Jms9MjAmYz1HSXRH/cUpXZktvQXZSN3VH/QnZpU1EtaHVGMjl2/UDdBeHJITmFkWjdr/bFVNPQ",
   },
-  
-]
+];
 
-export const RecentlyMatchedProducts=[
+export const RecentlyMatchedProducts = [
   {
-    profileImage:heroProfile,
-    name:"Greg L. Grover",
-    productImage:product1,
+    profileImage: heroProfile,
+    name: "Greg L. Grover",
+    productImage: product1,
   },
   {
-    profileImage:heroProfile,
-    name:"Greg L. Grover",
-    productImage:hero1,
+    profileImage: heroProfile,
+    name: "Greg L. Grover",
+    productImage: hero1,
   },
   {
-    profileImage:heroProfile,
-    name:"Greg L. Grover",
-    productImage:product3,
+    profileImage: heroProfile,
+    name: "Greg L. Grover",
+    productImage: product3,
   },
   {
-    profileImage:heroProfile,
-    name:"Greg L. Grover",
-    productImage:hero2,
+    profileImage: heroProfile,
+    name: "Greg L. Grover",
+    productImage: hero2,
   },
   {
-    profileImage:heroProfile,
-    name:"Greg L. Grover",
-    productImage:product1,
+    profileImage: heroProfile,
+    name: "Greg L. Grover",
+    productImage: product1,
   },
   {
-    profileImage:heroProfile,
-    name:"Greg L. Grover",
-    productImage:product2,
+    profileImage: heroProfile,
+    name: "Greg L. Grover",
+    productImage: product2,
   },
   {
-    profileImage:heroProfile,
-    name:"Greg L. Grover",
-    productImage:hero3,
+    profileImage: heroProfile,
+    name: "Greg L. Grover",
+    productImage: hero3,
   },
   {
-    profileImage:heroProfile,
-    name:"Greg L. Grover",
-    productImage:product4,
+    profileImage: heroProfile,
+    name: "Greg L. Grover",
+    productImage: product4,
   },
   {
-    profileImage:heroProfile,
-    name:"Greg L. Grover",
-    productImage:hero4,
+    profileImage: heroProfile,
+    name: "Greg L. Grover",
+    productImage: hero4,
   },
   {
-    profileImage:heroProfile,
-    name:"Greg L. Grover",
-    productImage:product2,
+    profileImage: heroProfile,
+    name: "Greg L. Grover",
+    productImage: product2,
   },
   {
-    profileImage:heroProfile,
-    name:"Greg L. Grover",
-    productImage:hero2,
+    profileImage: heroProfile,
+    name: "Greg L. Grover",
+    productImage: hero2,
   },
   {
-    profileImage:heroProfile,
-    name:"Greg L. Grover",
-    productImage:product4,
+    profileImage: heroProfile,
+    name: "Greg L. Grover",
+    productImage: product4,
   },
   {
-    profileImage:heroProfile,
-    name:"Greg L. Grover",
-    productImage:hero2,
+    profileImage: heroProfile,
+    name: "Greg L. Grover",
+    productImage: hero2,
   },
   {
-    profileImage:heroProfile,
-    name:"Greg L. Grover",
-    productImage:hero3,
+    profileImage: heroProfile,
+    name: "Greg L. Grover",
+    productImage: hero3,
   },
   {
-    profileImage:heroProfile,
-    name:"Greg L. Grover",
-    productImage:hero2,
+    profileImage: heroProfile,
+    name: "Greg L. Grover",
+    productImage: hero2,
   },
   {
-    profileImage:heroProfile,
-    name:"Greg L. Grover",
-    productImage:hero3,
+    profileImage: heroProfile,
+    name: "Greg L. Grover",
+    productImage: hero3,
   },
   {
-    profileImage:heroProfile,
-    name:"Greg L. Grover",
-    productImage:hero2,
+    profileImage: heroProfile,
+    name: "Greg L. Grover",
+    productImage: hero2,
   },
-]
+];
+
+export const safariDownloadSteps = [
+  {
+    step: "Step 1",
+    title: "Tap the Share Icon",
+    description: "Look for the Share icon, shaped like a square with an arrow.",
+    image: safari1,
+  },
+  {
+    step: "Step 2",
+    title: "Select ‘Add to Home Screen’",
+    description: "Look for the Share icon, shaped like a square with an arrow.",
+    image: safari2,
+  },
+  {
+    step: "Step 3",
+    title: "Name the Shortcut",
+    description: "Look for the Share icon, shaped like a square with an arrow.",
+    image: safari3,
+  },
+];
+export const chromeDownloadSteps = [
+  {
+    step: "Step 1",
+    title: "Tap the Share Icon",
+    description: "Look for the Share icon, shaped like a square with an arrow.",
+    image: chrome1,
+  },
+  {
+    step: "Step 2",
+    title: "Select ‘Add to Home Screen’",
+    description: "Look for the Share icon, shaped like a square with an arrow.",
+    image: safari2,
+  },
+  {
+    step: "Step 3",
+    title: "Name the Shortcut",
+    description: "Look for the Share icon, shaped like a square with an arrow.",
+    image: safari3,
+  },
+];

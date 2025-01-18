@@ -72,6 +72,31 @@ const YourProduct = ({ goBack }) => {
               className="absolute right-2 top-0 md:hidden"
             />
           </div>
+          <div className="grid sm:grid-cols-2 md:gap-10 gap-3.5 md:my-10 my-7">
+          <div>
+            <label className="block mb-3 font-normal md:text-base text-sm !leading-[125%]">
+              Brand Name
+            </label>
+            <div className="relative">
+              <input
+                type="text"
+                placeholder="Fabinadia"
+                className="w-full bg-white px-3.5 py-[13px] rounded-[10px] outline-none pe-10"
+              />
+              <img src={globe} alt="glob" className="absolute top-1/2 right-3 -translate-y-1/2"/>
+            </div>
+          </div>
+          <div>
+            <label className="block mb-3 font-normal md:text-base text-sm !leading-[125%]">
+              Product Link
+            </label>
+            <input
+              type="text"
+              placeholder="https://creativemarket.com/Helospace"
+              className="w-full bg-white px-3.5 py-[13px] rounded-[10px] outline-none"
+            />
+          </div>
+        </div>
           <div className="mt-7 rounded-[10px] p-3 flex justify-between gap-2.5 bg-white items-center">
             <p className="font-medium text-black lg:text-[22px] md:text-lg text-xs">
               🔥 This product has been added by 4 users in past 2 weeeks

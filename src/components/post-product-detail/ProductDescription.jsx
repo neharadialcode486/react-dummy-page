@@ -66,7 +66,7 @@ const ProductDescription = () => {
                     type="radio"
                     className="size-5 cursor-pointer"
                     id="men"
-                    name="gender" 
+                  checked 
                   />
                   <label htmlFor="men" className="cursor-pointer">
                     Men
@@ -77,7 +77,7 @@ const ProductDescription = () => {
                     type="radio"
                     className="size-5 cursor-pointer"
                     id="women"
-                    name="gender" 
+                  checked 
                   />
                   <label htmlFor="women" className="cursor-pointer">
                     Women
@@ -88,7 +88,7 @@ const ProductDescription = () => {
                     type="radio"
                     className="size-5 cursor-pointer"
                     id="kids"
-                    name="gender" 
+                  checked 
                   />
                   <label htmlFor="kids" className="cursor-pointer">
                     Kids

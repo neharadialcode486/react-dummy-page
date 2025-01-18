@@ -77,13 +77,13 @@ const Hero = () => {
         <ProductLibrary />
       </div>
       <div className="md:h-[300px] h-[150px] absolute -bottom-1 pointer-events-none w-full left-0 bg-white-gradient z-[2]"></div>
-      {isPopUpVisible && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 px-5">
-          <div ref={welcomePopUpRef}>
-            <WelcomePopUp closePopUp={handleClosePopUp}/>
+        {isPopUpVisible && (
+          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 px-5">
+            <div ref={welcomePopUpRef}>
+              <WelcomePopUp closePopUp={handleClosePopUp}/>
+            </div>
           </div>
-        </div>
-      )}
+        )}
     </div>
   );
 };
