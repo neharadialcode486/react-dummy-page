@@ -65,8 +65,8 @@ const RecentlyMatched = () => {
             })}
           </Masonry>
         </ResponsiveMasonry>
-        <div className="md:h-[300px] h-[150px] absolute -bottom-0 pointer-events-none w-full left-0 bg-white-gradient flex justify-center items-center">
-          <button className="mt-8 mb-4 bg-primary text-white px-6 md:px-8 py-[10px] rounded-full hover:bg-transparent border-primary border hover:text-primary transition-all duration-200 ease-in-out">
+        <div className="md:h-[300px] h-[150px] absolute -bottom-0 w-full left-0 bg-white-gradient flex justify-center items-center pointer-events-none">
+          <button className="mt-8 relative z-10 pointer-events-auto mb-4 bg-primary text-white px-6 md:px-8 py-[10px] rounded-full hover:bg-white border-primary border hover:text-primary transition-all duration-200 ease-in-out">
             More like this
           </button>
         </div>

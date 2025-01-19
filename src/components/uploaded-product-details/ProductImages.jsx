@@ -21,7 +21,7 @@ const ProductImages = () => {
             <img
               src={image.productImage}
               alt={`Main Slide ${index + 1}`}
-              className="w-full md:h-[630px] sm:h-[400px] h-[274px] object-cover rounded-lg mb-7 object-top"
+              className="w-full md:h-[630px] sm:h-[400px] h-[274px] object-cover rounded-lg mb-7 object-top overflow-hidden"
             />
           </SwiperSlide>
         ))}
@@ -41,7 +41,7 @@ const ProductImages = () => {
             <img
               src={image.productImage}
               alt={`Thumbnail ${index + 1}`}
-              className="sm:h-[223px] h-[127px] object-cover rounded-lg w-full cursor-pointer object-top"
+              className="sm:h-[223px] h-[127px] object-cover rounded-lg w-full cursor-pointer object-top overflow-hidden"
             />
           </SwiperSlide>
         ))}
