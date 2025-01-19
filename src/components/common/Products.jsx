@@ -9,7 +9,7 @@ import boy2 from "../../assets/img/product-1.png";
 const Products = () => {
   const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 640);
   const [value, setValue] = useState("");
-  const [visibleImages, setVisibleImages] = useState(5);
+  const [visibleImages, setVisibleImages] = useState(8);
   const initialVisibleImages = 7;
 
   const handleViewMore = () => {
@@ -39,11 +39,7 @@ const Products = () => {
         >
           <Masonry>
             {images.slice(0, visibleImages).map((img, index) => (
-              <CommonImg
-                key={index}
-                imgClass="w-full object-cover"
-                image={img.url}
-              />
+              <CommonImg key={index} imgClass={img.height} image={img.url} />
             ))}
           </Masonry>
         </ResponsiveMasonry>
@@ -58,21 +54,14 @@ const Products = () => {
           <Masonry>
             {isWideScreen && (
               <CommonImg
-                imgClass=" w-full object-cover rounded-xl"
+                imgClass=" w-full object-cover rounded-xl h-[335px]"
                 image={boy}
               />
             )}
             <MiddleImgs collections={productCollection[1]?.images || []} />
-            <span className="inline-block ">
-              <img className="opacity-0 w-full" src={boy} alt="boy" />
-              <img className="opacity-0 w-full" src={boy2} alt="boy" />
-            </span>
+            <span className="inline-block h-[760px] w-full"></span>
             {images.slice(0, visibleImages).map((img, index) => (
-              <CommonImg
-                key={index}
-                imgClass="w-full object-cover"
-                image={img.url}
-              />
+              <CommonImg key={index} imgClass={img.height} image={img.url} />
             ))}
           </Masonry>
         </ResponsiveMasonry>
