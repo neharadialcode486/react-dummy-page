@@ -336,11 +336,26 @@ export const productCollection = [
         url: hero2,
       },
       {
-        url: product3,
+        url: product4,
       },
       {
-        url: product2,
+        url: hero2,
       },
+
+      {
+        url: hero2,
+      },
+      {
+        url: product3,
+      },
+
+      {
+        url: product4,
+      },
+      {
+        url: product3,
+      },
+
       {
         url: product4,
       },
@@ -348,22 +363,14 @@ export const productCollection = [
         url: hero2,
       },
       {
-        url: product1,
-      },
-      {
-        url: hero2,
-      },
-      {
         url: product3,
       },
-      {
-        url: product2,
-      },
+
       {
         url: product4,
       },
       {
-        url: hero2,
+        url: product3,
       },
     ],
     title: "Product 1",

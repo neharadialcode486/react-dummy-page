@@ -1,6 +1,6 @@
 import React from "react";
 
-const CommonImg = ({ imgClass,parentClass ,image}) => {
+const CommonImg = ({ imgClass, parentClass, image }) => {
   return (
     <div className={`p-2 ${parentClass}`}>
       <div className="relative rounded-xl overflow-hidden group">
