@@ -331,46 +331,59 @@ export const productCollection = [
     images: [
       {
         url: product1,
+        height: "h-[355px] w-full object-cover",
       },
       {
         url: hero2,
+        height: "h-[210px] w-full object-cover",
       },
       {
         url: product4,
+        height: "h-[355px] w-full object-cover",
       },
       {
         url: hero2,
+        height: "h-[210px] w-full object-cover",
       },
 
       {
         url: hero2,
+        height: "h-[210px] w-full object-cover",
       },
       {
-        url: product3,
-      },
-
-      {
-        url: product4,
-      },
-      {
-        url: product3,
+        url: product2,
+        height: "h-[431px] w-full object-cover",
       },
 
       {
         url: product4,
+        height: "h-[355px] w-full object-cover",
+      },
+      {
+        url: product3,
+        height: "h-[355px] w-full object-cover",
+      },
+
+      {
+        url: product4,
+        height: "h-[355px] w-full object-cover",
       },
       {
         url: hero2,
+        height: "h-[210px] w-full object-cover",
       },
       {
         url: product3,
+        height: "h-[355px] w-full object-cover",
       },
 
       {
         url: product4,
+        height: "h-[355px] w-full object-cover",
       },
       {
         url: product3,
+        height: "h-[355px] w-full object-cover",
       },
     ],
     title: "Product 1",
@@ -380,27 +393,35 @@ export const productCollection = [
     images: [
       {
         url: hero2,
+        height: "h-[180px] w-full object-cover",
       },
       {
         url: hero2,
+        height: "h-[180px] w-full object-cover",
       },
       {
         url: product2,
+        height: "h-[431px] w-full object-cover",
       },
       {
         url: product2,
+        height: "h-[431px] w-full object-cover",
       },
       {
         url: hero2,
+        height: "h-[180px] w-full object-cover",
       },
       {
         url: hero2,
+        height: "h-[180px] w-full object-cover",
       },
       {
         url: product2,
+        height: "h-[431px] w-full object-cover",
       },
       {
         url: product2,
+        height: "h-[431px] w-full object-cover",
       },
     ],
     title: "Collection Shirts",

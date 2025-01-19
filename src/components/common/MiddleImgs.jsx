@@ -13,11 +13,7 @@ const MiddleImgs = ({ collections }) => {
           {collections.slice(0, 4).map((obj, i) => (
             <div className="p-2" key={i}>
               <div className="relative rounded-xl overflow-hidden">
-                <img
-                  src={obj.url}
-                  className="object-cover w-full"
-                  alt="Product"
-                />
+                <img src={obj.url} className={obj.height} alt="Product" />
                 {i === 3 && collections.length > 4 ? (
                   <div className="w-full h-full absolute top-0 left-0 bg-black bg-opacity-70 z-10 text-white xl:text-[100px] text-[70px] ff_cook  font-bold flex flex-col justify-center items-center">
                     {collections.length > 4 ? `+${collections.length - 4}` : ""}
