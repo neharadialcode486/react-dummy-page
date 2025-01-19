@@ -9,7 +9,7 @@ import boy2 from "../../assets/img/product-1.png";
 const Products = () => {
   const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 640);
   const [value, setValue] = useState("");
-  const [visibleImages, setVisibleImages] = useState(10);
+  const [visibleImages, setVisibleImages] = useState(5);
   const initialVisibleImages = 7;
 
   const handleViewMore = () => {

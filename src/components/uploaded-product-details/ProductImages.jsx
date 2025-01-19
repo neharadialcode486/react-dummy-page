@@ -1,17 +1,53 @@
-import React from 'react'
-import product2 from "../../assets/img/product-3.png"
+import React, { useState } from "react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Navigation, Thumbs } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { showProductImage } from "../common/Helper";
 
 const ProductImages = () => {
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
-    <div className='max-w-[630px] w-full mx-auto'>
-<img src={product2} alt="product" className='w-full md:h-[630px] sm:h-[400px] h-[274px] object-cover rounded-lg mb-7' />
-<div className='grid grid-cols-3 lg:gap-7 sm:gap-4 gap-2.5 w-full'>
-    <img src={product2} alt="product" className='sm:h-[223px] h-[127px] object-cover rounded-lg w-full' />
-    <img src={product2} alt="product" className='sm:h-[223px] h-[127px] object-cover rounded-lg w-full' />
-    <img src={product2} alt="product" className='sm:h-[223px] h-[127px] object-cover rounded-lg w-full' />
-</div>
-    </div>
-  )
-}
+    <div className="xl:max-w-[630px] lg:max-w-[500px] max-w-[630px] w-full mx-auto">
+      <Swiper
+        spaceBetween={10}
+        slidesPerView={1}
+        thumbs={{ swiper: thumbsSwiper }}
+        modules={[ Thumbs]}
+        className="main-swiper w-full"
+      >
+        {showProductImage.map((image, index) => (
+          <SwiperSlide key={index}>
+            <img
+              src={image.productImage}
+              alt={`Main Slide ${index + 1}`}
+              className="w-full md:h-[630px] sm:h-[400px] h-[274px] object-cover rounded-lg mb-7"
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
 
-export default ProductImages
+      {/* Thumbnail Swiper */}
+      <Swiper
+        onSwiper={setThumbsSwiper}
+        spaceBetween={10}
+        slidesPerView={3}
+        modules={[Thumbs]}
+        watchSlidesProgress
+        className="thumb-swiper"
+      >
+        {showProductImage.map((image, index) => (
+          <SwiperSlide key={index}>
+            <img
+              src={image.productImage}
+              alt={`Thumbnail ${index + 1}`}
+              className="sm:h-[223px] h-[127px] object-cover rounded-lg w-full cursor-pointer"
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
+};
+
+export default ProductImages;

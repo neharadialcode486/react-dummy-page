@@ -406,3 +406,17 @@ export const productCollection = [
     title: "Collection Shirts",
   },
 ];
+ export const showProductImage = [
+  {
+    productImage:product1,
+  },
+  {
+    productImage:product2,
+  },
+  {
+    productImage:product3,
+  },
+  {
+    productImage:product4,
+  },
+ ]
