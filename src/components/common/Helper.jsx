@@ -331,59 +331,59 @@ export const productCollection = [
     images: [
       {
         url: product1,
-        height: "h-[355px] w-full object-cover",
+        height: "sm:h-[355px] h-[250px] w-full object-cover",
       },
       {
         url: hero2,
-        height: "h-[210px] w-full object-cover",
+        height: "sm:h-[210px] h-[180px] w-full object-cover",
       },
       {
         url: product4,
-        height: "h-[355px] w-full object-cover",
+        height: "sm:h-[355px] h-[250px] w-full object-cover",
       },
       {
         url: hero2,
-        height: "h-[210px] w-full object-cover",
+        height: "sm:h-[210px] h-[180px] w-full object-cover",
       },
 
       {
         url: hero2,
-        height: "h-[210px] w-full object-cover",
+        height: "sm:h-[210px] h-[180px] w-full object-cover",
       },
       {
         url: product2,
-        height: "h-[431px] w-full object-cover",
+        height: "sm:h-[431px] h-[260px] w-full object-cover",
       },
 
       {
         url: product4,
-        height: "h-[355px] w-full object-cover",
+        height: "sm:h-[355px] h-[250px] w-full object-cover",
       },
       {
         url: product3,
-        height: "h-[355px] w-full object-cover",
+        height: "sm:h-[355px] h-[250px] w-full object-cover",
       },
 
       {
         url: product4,
-        height: "h-[355px] w-full object-cover",
+        height: "sm:h-[355px] h-[250px] w-full object-cover",
       },
       {
         url: hero2,
-        height: "h-[210px] w-full object-cover",
+        height: "sm:h-[210px] h-[180px] w-full object-cover",
       },
       {
         url: product3,
-        height: "h-[355px] w-full object-cover",
+        height: "sm:h-[355px] h-[250px] w-full object-cover",
       },
 
       {
         url: product4,
-        height: "h-[355px] w-full object-cover",
+        height: "sm:h-[355px] h-[250px] w-full object-cover",
       },
       {
         url: product3,
-        height: "h-[355px] w-full object-cover",
+        height: "sm:h-[355px] h-[250px] w-full object-cover",
       },
     ],
     title: "Product 1",
@@ -393,35 +393,35 @@ export const productCollection = [
     images: [
       {
         url: hero2,
-        height: "h-[180px] w-full object-cover",
+        height: "sm:h-[180px] h-[140px] w-full object-cover",
       },
       {
         url: hero2,
-        height: "h-[180px] w-full object-cover",
+        height: "sm:h-[180px] h-[140px] w-full object-cover",
       },
       {
         url: product2,
-        height: "h-[431px] w-full object-cover",
+        height: "sm:h-[431px] h-[200px] w-full object-cover",
       },
       {
         url: product2,
-        height: "h-[431px] w-full object-cover",
+        height: "sm:h-[431px] h-[200px] w-full object-cover",
       },
       {
         url: hero2,
-        height: "h-[180px] w-full object-cover",
+        height: "sm:h-[180px] h-[140px] w-full object-cover",
       },
       {
         url: hero2,
-        height: "h-[180px] w-full object-cover",
+        height: "sm:h-[180px] h-[140px] w-full object-cover",
       },
       {
         url: product2,
-        height: "h-[431px] w-full object-cover",
+        height: "sm:h-[431px] h-[200px] w-full object-cover",
       },
       {
         url: product2,
-        height: "h-[431px] w-full object-cover",
+        height: "sm:h-[431px] h-[200px] w-full object-cover",
       },
     ],
     title: "Collection Shirts",

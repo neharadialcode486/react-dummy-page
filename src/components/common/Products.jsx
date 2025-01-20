@@ -59,7 +59,7 @@ const Products = () => {
               />
             )}
             <MiddleImgs collections={productCollection[1]?.images || []} />
-            <span className="inline-block h-[760px] w-full"></span>
+            <span className="inline-block sm:h-[760px] h-[450px] w-full"></span>
             {images.slice(0, visibleImages).map((img, index) => (
               <CommonImg key={index} imgClass={img.height} image={img.url} />
             ))}
