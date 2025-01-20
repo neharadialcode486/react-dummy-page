@@ -3,7 +3,7 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 const MiddleImgs = ({ collections }) => {
   return (
-    <div className="bg-white sm:p-6 p-2 rounded-xl w-full xl:min-w-[540px] lg:min-w-[590px] sm:min-w-[420px] min-w-[280px] sm:mx-3 mx-2 mt-2">
+    <div className="bg-white sm:p-6 p-2 rounded-xl w-full  sm:mx-3 mx-2 mt-2">
       <div className="flex gap-4 items-center sm:mb-4 mb-2">
         <span className="inline-block sm:h-[50px] h-[35px] sm:w-[50px] w-[35px] rounded-full bg-gray"></span>
         <p className="text-base font-bold text-balck">Added By Grover</p>
